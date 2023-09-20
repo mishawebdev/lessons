@@ -8,4 +8,47 @@ div {
   color: cadetblue;
 }
 
+p {
+  color: coral;
+}
+
+h1,
+h2,
+h3 {
+  color: darkcyan;
+}
+
+.healthy-food-menu {
+  color: navajowhite;
+}
+
+[class*="-link"]{
+  color: deeppink;
+}
+
+#healthy {
+  color :brown;
+}
+
+/* каскадність (вкладеність) селекторів */
+
+.healthy-text p{
+  color: crimson;
+}
+
+.pop-microelements * {
+  color: yellowgreen;
+}
+
+.portion-text > p {
+  color: rgb(94, 9, 173);
+}
+
+.rules-title ~ h3 {
+  color: rgb(167, 233, 14);
+}
+
+.healthy-breakfast + p {
+  color: dodgerblue;
+}
 
