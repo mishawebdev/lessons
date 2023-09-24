@@ -1,0 +1,145 @@
+@font-face {
+  font-family: 'Sarpanch';
+  src: url('../fonts/Sarpanch-Regular.woff2') format('woff2'),
+    url('../fonts/Sarpanch-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sarpanch';
+  src: url('../fonts/Sarpanch-SemiBold.woff2') format('woff2'),
+    url('../fonts/Sarpanch-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sarpanch';
+  src: url('../fonts/Sarpanch-Medium.woff2') format('woff2'),
+    url('../fonts/Sarpanch-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sarpanch';
+  src: url('../fonts/Sarpanch-ExtraBold.woff2') format('woff2'),
+    url('../fonts/Sarpanch-ExtraBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sarpanch';
+  src: url('../fonts/Sarpanch-Bold.woff2') format('woff2'),
+    url('../fonts/Sarpanch-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sarpanch';
+  src: url('../fonts/Sarpanch-Black.woff2') format('woff2'),
+    url('../fonts/Sarpanch-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Balsamiq Sans';
+  src: url('../fonts/BalsamiqSans-Bold.woff2') format('woff2'),
+      url('../fonts/BalsamiqSans-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Balsamiq Sans';
+  src: url('../fonts/BalsamiqSans-BoldItalic.woff2') format('woff2'),
+      url('../fonts/BalsamiqSans-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Balsamiq Sans';
+  src: url('../fonts/BalsamiqSans-Italic.woff2') format('woff2'),
+      url('../fonts/BalsamiqSans-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Balsamiq Sans';
+  src: url('../fonts/BalsamiqSans-Regular.woff2') format('woff2'),
+      url('../fonts/BalsamiqSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Turret Road';
+  src: url('../fonts/TurretRoad-ExtraBold.woff2') format('woff2'),
+      url('../fonts/TurretRoad-ExtraBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Turret Road';
+  src: url('../fonts/TurretRoad-ExtraLight.woff2') format('woff2'),
+      url('../fonts/TurretRoad-ExtraLight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Turret Road';
+  src: url('../fonts/TurretRoad-Bold.woff2') format('woff2'),
+      url('../fonts/TurretRoad-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Turret Road';
+  src: url('../fonts/TurretRoad-Medium.woff2') format('woff2'),
+      url('../fonts/TurretRoad-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Turret Road';
+  src: url('../fonts/TurretRoad-Light.woff2') format('woff2'),
+      url('../fonts/TurretRoad-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Turret Road';
+  src: url('../fonts/TurretRoad-Regular.woff2') format('woff2'),
+      url('../fonts/TurretRoad-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+

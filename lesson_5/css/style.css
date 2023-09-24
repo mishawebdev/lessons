@@ -1,0 +1,162 @@
+/* google fonts */
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:regular,600,700&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Kanit:regular,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono:regular,500,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Chakra+Petch:300,regular,500,600,600italic&display=swap");
+
+/* manual install */
+@import url("fonts.css");
+
+/* reset css */
+@import url("reset.css");
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.title,
+.sub-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  line-height: 1.27;
+}
+
+.title {
+  font-size: 30px;
+  color: #37393f;
+}
+
+.sub-title {
+  font-size: 20px;
+  color: #6b77e5;
+}
+
+.text,
+ul,
+ol {
+  font-size: 18px;
+  line-height: 1.46;
+  color: #7d7d7d;
+}
+
+ul,
+ol {
+  font-weight: 500;
+}
+
+/* -------- seasons ---------- */
+.title-season {
+  font-family: 'Sarpanch', sans-serif;
+  font-size: 30px;
+  line-height: 1.5;
+  font-weight: 900;
+  text-align: center;
+}
+
+.title-summer {
+  color: #19c37d;
+  text-transform: uppercase;
+}
+
+.title-spring {
+  color: #ff1414;
+  text-decoration: underline;
+  letter-spacing: 12px;
+}
+
+.title-autumn {
+  color: #fa8526;
+  text-shadow: 8px 8px 10px #495af1,
+    5px -5px 15px #fa8526;
+}
+
+.title-winter {
+  color: #2d42ff;
+  white-space: nowrap;
+}
+
+.text-season {
+  font-family: 'Balsamiq Sans', sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+.text-summer {
+  color: #19aa20;
+  text-align: right;
+  text-decoration: line-through;
+}
+
+.text-spring {
+  color: #ee7676;
+  text-align: justify;
+}
+
+.text-autumn {
+  color: #e2e606;
+  text-align: center;
+}
+
+.text-winter {
+  color: #495af1;
+  text-shadow: 15px 10px 18px #ff1414;
+  text-transform: capitalize;
+  word-spacing: 12px;
+}
+
+/* -------- volvo ---------- */
+.title-volvo {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 700;
+  line-height: 1.5;
+  color: blueviolet;
+  text-decoration: underline;
+}
+
+.text-volvo {
+  font-family: 'Balsamiq Sans', cursive;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #fa8526;
+  font-style: italic;
+  font-weight: 700;
+}
+
+/* -------- unesco ---------- */
+.title-unesco {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 34px;
+  font-weight: 600;
+  font-style: italic;
+  color: rgba(14, 235, 216, 0.5);
+}
+
+.sub-title-unesco {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 600;
+  color: rgba(123, 23, 143, 0.7);
+}
+
+.text-unesco {
+  font-family: 'Turret Road';
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #ff1414;
+  text-shadow: 5px 5px 8px #8eee76;
+}
+
+.text-czechia {
+  color: darkgoldenrod;
+  font-style: normal;
+  font-family: 'Turret Road', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.5;
+  text-decoration: underline;
+  text-transform: uppercase;
+  text-align: center;
+}
