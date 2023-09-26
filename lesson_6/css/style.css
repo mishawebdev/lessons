@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css?family=DM+Serif+Text:regular&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter:regular&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:regular,600&display=swap");
+/* reset */
+@import url("reset.css");
+
+/* jewelery */
+.jewellery {
+  padding: 140px 216px;
+  background-color: #fff9f4;
+  margin-bottom: 100px;
+}
+
+.text-content {
+  padding: 25px 0;
+  display: inline-block;
+  max-width: 563px;
+  margin-right: 38px;
+  vertical-align: top;
+}
+
+.title {
+  font-size: 28px;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #d06b00;
+  margin-bottom: 13px;
+}
+
+.sub-title {
+  font-family: 'DM Serif Text', serif;
+  font-size: 59px;
+  line-height: 1.46;
+}
+
+.image-block {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+.ear-ring-img {
+  margin-right: 22px;
+}
+
+/* consulting */
+.consulting {
+  margin: 0 auto 100px;
+  max-width: 692px;
+}
+.container-consulting {
+  background-color: #ffffff;
+}
+
+.title-meeting {
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  line-height: 1.27;
+  color: #37393f;
+  text-transform: capitalize;
+}
+
+.text-meeting {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  line-height: 1.46;
+  color: #7d7d7d;
+}
+
+.subtitle-meeting {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.27;
+  color: #6B77E5;
+}
+
+.table {
+  display: inline-block;
+  margin-right: 14px;
+}
+
+.block-benefits {
+  display: inline-block;
+  max-width: 332px;
+}
+
+.title-benefits {
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1.27;
+  color: #37393f;
+}
+
+.sub-title-benefits {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.27;
+  color: #40ddb6;
+}
+
+.list-benefits {
+  font-family: 'Inter', sans-serif;
+}
+
+.benefits-item {
+  font-size: 18px;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
