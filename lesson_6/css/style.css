@@ -5,7 +5,7 @@
 @import url("reset.css");
 
 /* jewelery */
-.jewellery {
+.container-jewellery {
   padding: 140px 216px;
   background-color: #fff9f4;
   margin-bottom: 100px;
@@ -51,8 +51,8 @@
 
 /* consulting */
 .consulting {
-  margin: 0 auto 100px;
   max-width: 692px;
+  margin: 0 auto 100px;
 }
 .container-consulting {
   background-color: #ffffff;
@@ -64,6 +64,7 @@
   line-height: 1.27;
   color: #37393f;
   text-transform: capitalize;
+  font-weight: 600;
 }
 
 .text-meeting {
@@ -81,7 +82,8 @@
 
 .table {
   display: inline-block;
-  margin-right: 14px;
+  margin-right: 29px;
+  max-width: 331px;
 }
 
 .block-benefits {
