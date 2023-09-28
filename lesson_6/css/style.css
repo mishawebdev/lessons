@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=DM+Serif+Text:regular&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Inter:regular&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Poppins:regular,600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Kumbh+Sans:regular,700,800&display=swap");
+
+
+
 /* reset */
 @import url("reset.css");
 
@@ -15,7 +19,6 @@
   display: inline-block;
   max-width: 563px;
   margin-right: 38px;
-  vertical-align: top;
 }
 
 .title {
@@ -50,13 +53,17 @@
 
 /* consulting */
 .consulting {
-  padding: 100px 0;
+  padding: 140px 0;
   max-width: 692px;
-  margin: 0 auto 100px;
+  margin: 0 auto;
 }
 
 .container-consulting {
   background-color: #ffffff;
+}
+
+.top-image {
+  margin-bottom: 37px;
 }
 
 .title-meeting {
@@ -66,6 +73,7 @@
   color: #37393f;
   text-transform: capitalize;
   font-weight: 600;
+  margin-bottom: 15px;
 }
 
 .text-meeting {
@@ -73,23 +81,37 @@
   font-size: 18px;
   line-height: 1.46;
   color: #7d7d7d;
+  margin-bottom: 42px;
 }
 
 .subtitle-meeting {
   font-family: 'Poppins', sans-serif;
+  font-size: 20px;
   line-height: 1.27;
+  font-weight: 600;
   color: #6B77E5;
+  margin-bottom: 12px;
 }
 
-.table {
+.sub-text {
+  margin-bottom: 40px;
+}
+
+/* benefits */
+.block-benefits {
+  font-size: 0;
+}
+
+.benefits-image{
+  max-width: 331px;
   display: inline-block;
   margin-right: 29px;
-  max-width: 331px;
+  vertical-align: top;
 }
 
-.block-benefits {
-  display: inline-block;
+.benefits-text {
   max-width: 332px;
+  display: inline-block;
 }
 
 .title-benefits {
@@ -98,6 +120,7 @@
   font-weight: 600;
   line-height: 1.27;
   color: #37393f;
+  margin-bottom: 15px;
 }
 
 .sub-title-benefits {
@@ -106,6 +129,7 @@
   font-weight: 600;
   line-height: 1.27;
   color: #40ddb6;
+  margin-bottom: 23px;
 }
 
 .list-benefits {
@@ -114,6 +138,112 @@
 
 .benefits-item {
   font-size: 18px;
+  color: #7d7d7d;
   line-height: 1.2;
   margin-bottom: 30px;
+}
+
+/* experiments */
+.experiments {
+  padding: 96px 0;
+  background-color: #dbfde9;
+}
+
+.container-experiments {
+  max-width: 1280px;
+  margin: 0 auto;
+  font-size: 0;
+}
+
+.title-experiments, h4 {
+font-family: 'Inter', sans-serif;
+font-size: 24px;
+color: #379b1e;
+margin-bottom: 25px;
+}
+
+.title-experiments {
+  color: darkcyan;
+  text-decoration: underline;
+}
+
+h4 {
+  font-size: 18px;
+  color: crimson;
+}
+
+/* experiment with figma template happy coach */
+.text-coach {
+  max-width: 490px;
+}
+
+.sub-heading {
+  font-family: 'Kumbh Sans', sans-serif;
+  color: rgba(74, 85, 108, 0.50) ;
+  font-size: 16px;
+  letter-spacing: -0.96px;
+  line-height: 1.5;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.title-coach {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 48px;
+  line-height: 1.25;
+  font-weight: 800;
+  letter-spacing: -0.96px;
+  color: #333461;
+  margin-bottom: 20px;
+}
+
+.coach-sub-text {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  padding-right: 30px;
+  margin-bottom: 64px;
+}
+
+.text-schedule {
+  max-width: 592px;
+  padding: 32px 0 32px 32px;
+}
+
+.title-schedule {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.26;
+  color: #333461;
+  margin-bottom: 8px;
+}
+
+.sub-text-schedule {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #333461;
+  margin-bottom: 48px;
+}
+
+.text-schedule {
+  display: inline-block;
+  margin-right: 96px;
+}
+
+.coach-image {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.coach-image img {
+  max-width: 560px;
+}
+
+.template-link {
+  font-family: "Inter", sans-serif;
+  display: inline-block;
+  margin: 15px 0 15px 15px;
 }
