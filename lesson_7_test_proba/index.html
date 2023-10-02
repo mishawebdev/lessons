@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Lesson 7 - CSS Properties of Block Design</title>
+</head>
+
+<body>
+  <header></header>
+  <main>
+
+    <!-- Section Experiments -->
+    <section class="section-experiments">
+      <div class="container-experiments">
+        <h3 class="title-experiments">Experiments</h3>
+      </div>
+    </section>
+
+    <!-- Section book -->
+    <section class="section-book">
+
+      <!-- 1) обмежуючий контейнер -->
+      <div class="container-book">
+
+        <!-- 3) заг. блок для картинки / картинок -->
+        <div class="image-wrap">
+
+          <!-- 4) загальний клас для обгортки картинки / картинок -->
+          <!-- 5) окремий клас .man для обгортки окремої картинки / картинок -->
+          <div class="single-image-wrap man">
+            <img src="img/man.jpg" alt="man">
+          </div>
+
+        </div>
+
+        <!-- 2) контентний блок -->
+        <div class="book-info-wrapper">
+          <h2 class="title-book">About the Author</h2>
+
+          <span class="deco-bottom"></span>
+
+          <div class="text-book">
+            <p>
+              We believe that bookstores are essential to a healthy culture. They’re where authors can connect with
+              readers, where we discover new writers, where children get hooked on the thrill of reading that can last a
+              lifetime.
+            </p>
+          </div>
+
+          <div class="static-wrap wrap-first">
+            <span class="static-count">02</span>
+            <h4 class="static-description">Books Published</h4>
+          </div>
+
+          <div class="static-wrap wrap-second">
+            <span class="static-count">4.5</span>
+            <h4 class="static-description">User Reviews</h4>
+          </div>
+
+          <div class="static-wrap">
+            <span class="static-count">04</span>
+            <h4 class="static-description">Best Seller Awards</h4>
+          </div>
+
+          <div class="book-contact">
+            <div class="qr-wrap">
+              <img class="qr-code" src="img/qr-code.jpg" alt="qr code">
+            </div>
+            <div class="contacts-wrap">
+              <h5 class="contact-person">John Abraham , Ph.d</h5>
+              <a class="contact-email" href="mailto:johnabraham@gmail.com">Mail: johnabraham@gmail.com</a>
+              <a class="contact-phone" href="tel:+21235459000">Phone: (+2) 123 545 9000</a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+  <footer></footer>
+</body>
+
+</html>
