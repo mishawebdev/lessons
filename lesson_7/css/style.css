@@ -1,6 +1,13 @@
+/* google fonts */
 @import url("https://fonts.googleapis.com/css?family=Inter:regular,500&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Poppins:regular,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Infant:700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Cardo:regular&display=swap");
 
+/* local fonts */
+@import url("fonts.css");
+
+/* reset styles */
 @import url("reset.css");
 
 
@@ -34,7 +41,7 @@
   margin-bottom: 16px;
 }
 
-.deco-square, 
+.deco-square,
 .licence-info {
   display: inline-block;
 }
@@ -146,4 +153,364 @@
 
 .ordered-item {
   list-style-type: decimal-leading-zero;
+}
+
+
+/* clothing section */
+.clothing {
+  font-family: 'Causten', sans-serif;
+}
+
+.container-clothing {
+  margin: 0 auto;
+  padding: 100px 19px 100px 21px;
+  max-width: 1240px;
+}
+
+.title-clothing {
+  font-family: 'Core Sans C', sans-serif;
+  font-size: 28px;
+  color: #3c4242;
+  font-weight: 600;
+  line-height: 1.17;
+  margin-bottom: 30px;
+  display: inline-block;
+}
+
+.deco-bar {
+  display: inline-block;
+  width: 6px;
+  height: 28px;
+  background-color: #8a33fd;
+  border-radius: 10px;
+  margin-right: 15px;
+  margin-left: -22px;
+}
+
+.subtitle-clothing,
+.more-text {
+  font-family: 'Core Sans C', sans-serif;
+  font-size: 20px;
+  color: #807d7e;
+  font-weight: 600;
+  line-height: 1.65;
+  margin-bottom: 25px;
+}
+
+.text-clothing {
+  font-size: 20px;
+  line-height: 1.65;
+  margin-bottom: 25px;
+  letter-spacing: 0.4px;
+}
+
+.text-clothing span {
+  font-weight: 700;
+  color: #807d7e;
+}
+
+.text-clothing p {
+  margin-bottom: 20px;
+}
+
+/* jewellery practice */
+.section-jewellery {
+  font-family: 'Cormorant Infant', serif;
+  border-bottom: 3px solid #40ddb6;
+}
+
+.container-jewellery {
+  margin: 0 auto;
+  padding: 50px 0;
+  max-width: 1100px;
+}
+
+.text-wrapper {
+  max-width: 503px;
+  display: inline-block;
+  margin-right: 75px;
+}
+
+.text-jewellery {
+  font-size: 30px;
+  line-height: 1.4;
+  color: #606060;
+}
+
+.title-secondary {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #d58417;
+  margin-bottom: 27px;
+}
+
+.title-primary {
+  font-size: 64px;
+  text-transform: capitalize;
+  margin-bottom: 31px;
+}
+
+/* borders around images */
+.images-wrapper {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 0;
+}
+
+.img-wrapper {
+  vertical-align: middle;
+  display: inline-block;
+  border: 1px solid #502203;
+  border-radius: 235px;
+}
+
+.img-wrapper img {
+  border-radius: 235px;
+}
+
+.girl-img-1 {
+  margin-right: 30px;
+  width: 177px;
+  height: 336px;
+}
+
+.girl-img-1 img {
+  padding-top: 14px;
+  margin-left: -10px;
+}
+
+.girl-img-2 {
+  width: 307px;
+  height: 500px;
+}
+
+.girl-img-2 img {
+  padding-top: 19px;
+  margin-left: -11px;
+}
+
+/* experiments */
+
+.section-experiments {
+  font-family: 'Norwester', sans-serif;
+}
+
+.container-experiments {
+  margin: 0 auto;
+  padding: 50px 0;
+  max-width: 1000px;
+}
+
+.title-experiments {
+  font-size: 24px;
+  color: chocolate;
+  text-decoration: underline;
+  letter-spacing: 5px;
+  text-shadow: 2px 3px 5px lightgreen;
+  font-style: oblique;
+  margin-bottom: 50px;
+}
+
+
+
+/* ======= borders ======= */
+.border-styles {
+  width: 300px;
+  height: 200px;
+  border-top: 15px dashed purple;
+  border-right: 25px solid yellow;
+  border-bottom: 12px double green;
+  border-left: 18px dotted red;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* ======= borders ======= */
+
+
+/* ======= outline ======= */
+
+.outline-styles-div {
+  width: 300px;
+  height: 100px;
+  outline: 5px solid #502203;
+  margin-bottom: 25px;
+  border-radius: 12px;
+}
+
+.outline-styles-span {
+  outline: 7px dashed green;
+}
+
+/* ======= outline ======= */
+
+
+/* ======= opacity ======= */
+.opacity-img {
+  opacity: 0.3;
+}
+
+.img-border-radius {
+  border-radius: 50% / 50px;
+  box-shadow: 0 0 45px yellow;
+}
+
+.opacity-text {
+  font-size: 35px;
+  margin-bottom: 50px;
+  opacity: 0.3;
+}
+
+/* ======= opacity ======= */
+
+
+/* ======= box-shadow ======= */
+.box-shadow-block {
+  box-shadow: inset 0 0 52px 0 rgba(89, 179, 53, 0.55);
+  width: 100%;
+  height: 100px;
+}
+
+.box-shadow-block span {
+  font-size: 24px;
+  color: #8a33fd;
+}
+
+/* ======= box-shadow ======= */
+
+
+
+/* section book */
+.section-book {
+  font-family: 'Inter', sans-serif;
+  background-color: #f5f8fc;
+}
+
+/* 1) обмежуючий контейнер */
+.container-book {
+  margin: 0 auto;
+  padding: 140px 70px 150px 40px;
+  max-width: 1440px;
+  font-size: 0;
+}
+
+/* 3) заг. блок для картинки */
+.image-wrap {
+  font-size: 0;
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* 4) загальний клас для обгортки картинки */
+.single-image-wrap {
+  margin-right: 150px;
+  display: inline-block;
+  border: 10px solid #ffca42;
+
+}
+
+/* 5) окремий клас .man для обгортки окремої картинки */
+.man {
+  width: 545px;
+  height: 640px;
+}
+
+.man img {
+  margin-left: -30px;
+  margin-top: -30px;
+  box-shadow: 0 0 20px 0 rgba(27, 55, 100, 0.30);
+}
+
+/* 2) контентний блок */
+.book-info-wrapper {
+  max-width: 605px;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.title-book {
+  font-family: 'Cardo', serif;
+  font-size: 42px;
+  line-height: 1.2;
+  color: #1b3764;
+  margin-bottom: 24px;
+}
+
+.deco-bottom {
+  display: inline-block;
+  width: 50px;
+  height: 3px;
+  background-color: #ffca42;
+  margin-bottom: 33px;
+}
+
+.text-book p {
+  font-family: 'Inter', sans-serif;
+  font-size: 19px;
+  margin-bottom: 34px;
+  line-height: 1.8;
+  color: #969aa0;
+}
+
+.static-count {
+  font-family: 'Cardo', serif;
+  font-size: 54px;
+  line-height: 1.42;
+}
+
+.static-description {
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  line-height: 1.27;
+  margin-right: 20px;
+  color: #969aa0;
+}
+
+.static-wrap {
+  display: inline-block;
+  padding-right: 10px;
+  padding-left: 12px;
+  margin-bottom: 55px;
+  margin-right: 25px;
+}
+
+.wrap-first,
+.wrap-second {
+  border-right: 1px solid #ffca42;
+}
+
+.book-contact {
+  max-width: 484px;
+  background-color: #1b3764;
+  padding: 16px 20px;
+  font-size: 0;
+}
+
+.contact-person {
+  font-family: 'Cardo', serif;
+  font-size: 22px;
+  color: #ffca42;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.contact-email,
+.contact-phone {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  color: #b4c7e7;
+  line-height: 1.58;
+}
+
+.contacts-wrap {
+  display: inline-block;
+  width: 274px;
+  vertical-align: top;
+  padding-top: 18px;
+}
+
+.qr-wrap {
+  display: inline-block;
+  width: 130px;
+  margin-right: 40px;
 }
