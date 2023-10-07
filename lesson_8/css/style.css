@@ -167,10 +167,16 @@
 
 .projects-wrap {
   margin-bottom: 58px;
+  font-size: 0;
 }
 
 .project {
   display: inline-block;
+  width: 100%;
+  margin-right: 34px;
+}
+
+.project-image {
   max-width: 384px;
   height: 501px;
 }
@@ -178,4 +184,18 @@
 .card-first .project-image {
   background-image: url('../img/monitor-photo.jpg');
   background-repeat: no-repeat;
+}
+
+.card-second .project-image {
+  background-image: url('../img/man-image.jpg');
+  background-repeat: no-repeat;
+}
+
+.card-third .project-image {
+  background-image: url('../img/smartphone-image.jpg');
+  background-repeat: no-repeat;
+}
+
+.project-title {
+  font-size: 20px;
 }
