@@ -159,32 +159,23 @@
   margin-bottom: 14px;
 }
 
-.top-textcontent > p {
+.top-textcontent>p {
   font-size: 18px;
   line-height: 1.46;
   color: #7d7d7d;
 }
 
 .projects-wrap {
+  margin-bottom: 58px;
 }
 
-.project-image-1 {
+.project {
+  display: inline-block;
   max-width: 384px;
   height: 501px;
-  background-repeat: no-repeat;
+}
+
+.card-first .project-image {
   background-image: url('../img/monitor-photo.jpg');
-}
-
-.project-image-2 {
-  max-width: 384px;
-  height: 501px;
   background-repeat: no-repeat;
-  background-image: url('../img/man-image.jpg');
-}
-
-.project-image-3 {
-  max-width: 384px;
-  height: 501px;
-  background-repeat: no-repeat;
-  background-image: url('../img/smartphone-image.jpg');
 }
