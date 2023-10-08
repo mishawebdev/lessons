@@ -173,12 +173,13 @@
 .project {
   display: inline-block;
   width: 100%;
-  margin-right: 34px;
+  max-width: 370px;
 }
 
 .project-image {
   max-width: 384px;
   height: 501px;
+  margin-bottom: 24px;
 }
 
 .card-first .project-image {
@@ -196,6 +197,42 @@
   background-repeat: no-repeat;
 }
 
+.card-fourth .project-image {
+  background-image: url('../img/woman-image.jpg');
+  background-repeat: no-repeat;
+}
+
+.card-fifth .project-image {
+  background-image: url('../img/diagram-image.jpg');
+  background-repeat: no-repeat;
+}
+
+.card-sixth .project-image {
+  background-image: url('../img/laptop-image.jpg');
+  background-repeat: no-repeat;
+}
+
+.card-first,
+.card-second,
+.card-fourth,
+.card-fifth {
+  margin-right: 34px;
+}
+
 .project-title {
+  font-family: 'Poppins', sans-serif;
   font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.project-date {
+  font-size: 14px;
+  color: #7d7d7d;
+  line-height: 1.46;
+  padding-left: 25px;
+  min-height: 22px;
+
+  background-image: url('../img/todo-icon.svg');
+  background-repeat: no-repeat;
+  background-position: left;
 }
