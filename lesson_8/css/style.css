@@ -172,44 +172,39 @@
 
 .project {
   display: inline-block;
+  max-width: 384px;
   width: 100%;
-  max-width: 370px;
 }
 
 .project-image {
   max-width: 384px;
   height: 501px;
   margin-bottom: 24px;
+  background-repeat: no-repeat;
 }
 
 .card-first .project-image {
   background-image: url('../img/monitor-photo.jpg');
-  background-repeat: no-repeat;
 }
 
 .card-second .project-image {
   background-image: url('../img/man-image.jpg');
-  background-repeat: no-repeat;
 }
 
 .card-third .project-image {
   background-image: url('../img/smartphone-image.jpg');
-  background-repeat: no-repeat;
 }
 
 .card-fourth .project-image {
   background-image: url('../img/woman-image.jpg');
-  background-repeat: no-repeat;
 }
 
 .card-fifth .project-image {
   background-image: url('../img/diagram-image.jpg');
-  background-repeat: no-repeat;
 }
 
 .card-sixth .project-image {
   background-image: url('../img/laptop-image.jpg');
-  background-repeat: no-repeat;
 }
 
 .card-first,
@@ -230,9 +225,226 @@
   color: #7d7d7d;
   line-height: 1.46;
   padding-left: 25px;
-  min-height: 22px;
 
   background-image: url('../img/todo-icon.svg');
   background-repeat: no-repeat;
+  background-size: 22px;
   background-position: left;
+}
+
+
+/* fashion section */
+.container-fashion {
+  max-width: 1240px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.fashion-wrap {
+  font-size: 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.image-banner-leaf,
+.image-fashion-block {
+  display: inline-block;
+  min-height: 640px;
+}
+
+.image-banner-leaf {
+  max-width: 614px;
+  padding: 183px 74px 175px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url('../img/background-leaf.jpg') center / cover no-repeat;
+}
+
+.image-fashion-block {
+  vertical-align: top;
+  max-width: 626px;
+  width: 100%;
+  height: 640px;
+  background: url('../img/young-people.jpg') center / cover no-repeat;
+}
+
+.title-fashion {
+  font-family: 'Core Sans C', sans-serif;
+  font-size: 34px;
+  font-weight: 900;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+  line-height: 1.47;
+  margin-bottom: 18px;
+}
+
+.text-fashion>p {
+  font-family: 'Causten', sans-serif;
+  font-size: 20px;
+  line-height: normal;
+  letter-spacing: 1px;
+  color: #ffffff;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+
+.link-fashion {
+  background-color: #ffffff;
+  border-radius: 8px;
+  color: #3c4242;
+  display: inline-block;
+  font-family: 'Causten', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 12px 44px;
+  text-transform: capitalize;
+}
+
+/* clothing section */
+
+.container-clothing {
+  font-family: 'Causten', sans-serif;
+  margin: 0 auto;
+  padding: 50px 15px;
+  max-width: 1245px;
+}
+
+.title-clothing {
+  font-family: 'Core Sans C', sans-serif;
+  font-size: 28px;
+  color: #3c4242;
+  font-weight: 600;
+  line-height: 1.17;
+  margin-bottom: 30px;
+  background: url('../img/deco-bar.svg') no-repeat;
+  min-height: 31px;
+  letter-spacing: 0.56px;
+}
+
+.container-clothing>* {
+  padding-left: 21px;
+}
+
+.subtitle-clothing,
+.more-text {
+  font-family: 'Core Sans C', sans-serif;
+  font-size: 20px;
+  color: #807d7e;
+  font-weight: 600;
+  line-height: 1.65;
+  margin-bottom: 25px;
+}
+
+.text-clothing {
+  font-size: 20px;
+  line-height: 1.65;
+  margin-bottom: 25px;
+  letter-spacing: 0.4px;
+}
+
+.text-clothing span {
+  font-weight: 700;
+  color: #807d7e;
+}
+
+.text-clothing p {
+  margin-bottom: 20px;
+}
+
+/* Experiments */
+
+.container-experiment {
+  font-family: 'Inter', sans-serif;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.title-experiments {
+  font-size: 28px;
+  margin-bottom: 50px;
+  padding: 15px 30px;
+  color: aqua;
+  background-color: blueviolet;
+}
+
+.inner {
+  padding: 30px;
+  height: 200px;
+  margin-bottom: 50px;
+}
+
+.top-background {
+  background-image:linear-gradient(90deg, rgba(54,176,42,1) 0%, rgba(0,249,255,1) 100%);
+  width: 1000px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.main-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  text-align: center;
+  color: rgb(228, 51, 19);
+  padding: 50px;
+  text-decoration: underline;
+}
+
+.background-color {
+  background-color: rgba(42, 181, 24, 0.301);
+}
+
+.background-image {
+  background-image: url('../img/more-leaves-on-green.png');
+}
+
+.background-image-fixed {
+  background-image: url('../img/lemur.jpg');
+  background-attachment: fixed;
+  height: 800px;
+  background-size: cover;
+  background-position: center;
+
+}
+
+.background-image-gradient {
+  background-image: linear-gradient(90deg, rgba(148,145,208,1) 0%, rgba(146,255,0,1) 100%);
+}
+
+.background-image-repear-x {
+  background: rgba(80, 233, 80, 0.363) url('../img/giulia-salvaterra.jpg') repeat-x;
+  height: 400px;
+  padding:150px 50px;
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 900;
+  color: chocolate;
+}
+
+.background-image-repeat-y {
+  background: url('../img/giulia-salvaterra.jpg') repeat-y, radial-gradient(circle, rgba(176,84,42,1) 0%, rgba(0,255,29,1) 100%);
+  height: 800px;
+  background-position: center;
+  margin-bottom: 50px;
+}
+
+.background-image-single {
+  background: url('../img/giulia-salvaterra.jpg') top left no-repeat, #eb97293a;
+}
+
+.background-image-cover {
+  background: url('../img/buildings.jpg') 0 0 / cover no-repeat;
+  height: 800px;
+  margin-bottom: 50px;
+}
+.background-image-contain {
+  background: url('../img/buildings.jpg') center / contain no-repeat;
+  height: 1000px;
+  margin-bottom: 50px;
+}
+
+footer {
+  background-image: url('../img/just-waves.webp');
+  height: 400px;
+  width: 1000px;
+  margin: 0 auto;
 }
