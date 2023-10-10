@@ -25,13 +25,7 @@ header {
   margin-bottom: 15px;
 }
 
-.title-welcome {
-  font-family: 'Inter', sans-serif;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.22;
-  color: #37393f;
-}
+
 
 .title-vision,
 .title-mission {
@@ -120,6 +114,86 @@ header {
   height: 27px;
   margin-right: 8px;
 }
+
+/* ======== About us section - task 2 ========= */
+.container-about-us {
+  max-width: 1094px;
+  padding: 151px 350px 40px 69px;
+  margin: 0 auto;
+}
+
+.title-welcome {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.22;
+  color: #37393f;
+  margin-bottom: 16px;
+}
+
+.title-welcome::before {
+  content: '';
+  display: inline-block;
+  margin-right: 6px;
+  width: 12px;
+  height: 12px;
+  background-color: #40ddb6;
+}
+
+.title-about-us {
+  max-width: 413px;
+  margin-bottom: 10px;
+}
+
+.text-about-us {
+  margin-bottom: 48px;
+}
+
+.text-about-us p:not(:last-child){
+  line-height: 1.46;
+  margin-bottom: 16px;
+}
+
+.our-vision-wrap,
+.our-mission-wrap {
+  border: 1px solid #e3e3e3;
+  padding: 28px 41px 28px 43px;
+}
+
+.our-vision-wrap {
+  margin-bottom: 31px;
+}
+
+.checked-block-wrap {
+  margin-bottom: 48px;
+}
+
+.title-checked {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  color: #37393f;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 12px;
+}
+
+.title-checked::before{
+  content: '';
+  display: inline-block;
+  background: url('../img/check-icon.svg') 0 0 no-repeat;
+  width: 27px;
+  height: 27px;
+  margin-right: 19px;
+}
+
+.text-checked {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  line-height: 1.46;
+  color: #7d7d7d;
+  padding-left: 50px;
+}
+
 
 .link-more {
   font-family: 'Poppins', sans-serif;
