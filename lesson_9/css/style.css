@@ -1,0 +1,143 @@
+@import url('fonts.css');
+
+@import url('reset.css');
+
+header {
+  max-width: 692px;
+  margin: 0 auto;
+}
+
+/* consulting */
+.container-consulting {
+  padding: 140px 0;
+  max-width: 692px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+.title-meeting {
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  line-height: 1.27;
+  color: #37393f;
+  text-transform: capitalize;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.title-welcome {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.22;
+  color: #37393f;
+}
+
+.title-vision,
+.title-mission {
+  font-family: 'Poppins', sans-serif;
+}
+
+.text-meeting {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  line-height: 1.46;
+  color: #7d7d7d;
+  margin-bottom: 42px;
+}
+
+.subtitle-meeting {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  line-height: 1.27;
+  font-weight: 600;
+  color: #6B77E5;
+  margin-bottom: 12px;
+}
+
+.sub-text {
+  margin-bottom: 40px;
+}
+
+/* benefits */
+.block-benefits {
+  font-size: 0;
+  margin-bottom: 50px;
+}
+
+.table {
+  max-width: 331px;
+  display: inline-block;
+  margin-right: 29px;
+  /* vertical-align: top; */
+}
+
+.benefits-text {
+  max-width: 332px;
+  display: inline-block;
+}
+
+.title-benefits {
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1.27;
+  color: #37393f;
+  margin-bottom: 15px;
+}
+
+.sub-title-benefits {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.27;
+  color: #40ddb6;
+  margin-bottom: 21px;
+}
+
+.list-benefits {
+  font-family: 'Inter', sans-serif;
+}
+
+.benefits-item {
+  font-size: 18px;
+  color: #7d7d7d;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  min-height: 27px;
+  line-height: normal;
+}
+
+.benefits-item:last-child {
+  margin-bottom: 0;
+}
+
+.benefits-item::before {
+  content: '';
+  display: inline-block;
+  background: url('../img/check-icon.svg') 0 0 no-repeat;
+  width: 27px;
+  height: 27px;
+  margin-right: 8px;
+}
+
+.link-more {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  line-height: 1.22;
+  display: inline-block;
+  padding: 22px 35px;
+  background-color: #6b77e5;
+  color: #ffffff;
+  margin-bottom: 50px;
+}
+
+/* task 4 */
+.container-jewellery {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 193px;
+  outline: 1px solid orange;
+  height: 1000px;
+  font-family: 'Cormorant Infant', serif;
+}
