@@ -254,7 +254,7 @@ header {
   background-color: #f4f4f4;
   max-width: 386px;
   width: 100%;
-  padding: 57px 43px 58px 43px;
+  padding: 58px 43px 58px 43px;
   vertical-align: top;
 }
 
@@ -280,7 +280,12 @@ header {
   margin-bottom: 37px;
 }
 
-.apointment-service::before {
+.deco-icon {
+margin-top: -95px;
+
+}
+
+/* .apointment-service::before {
   content: '';
   display: inline-block;
   width: 72px;
@@ -293,7 +298,7 @@ header {
 .apointment-service:hover::before {
   background: url('../img/icon-1-blue.svg') 0 0 no-repeat;
   cursor: pointer;
-}
+} */
 
 .consultation-service::before {
   content: '';
@@ -329,10 +334,8 @@ header {
   font-family: 'Inter', sans-serif;
   font-size: 18px;
   color: #6b77e5;
-  font-weight: 400;
   line-height: 1.46;
   font-weight: 600;
-  line-height: normal;
   text-decoration: transparent;
   transition: color 0.3s;
 }
