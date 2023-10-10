@@ -254,10 +254,9 @@ header {
   background-color: #f4f4f4;
   max-width: 386px;
   width: 100%;
-  padding: 58px 43px;
+  padding: 57px 43px 58px 43px;
   vertical-align: top;
 }
-
 
 .service-wrap:not(:last-child) {
   margin-right: 31px;
@@ -279,6 +278,51 @@ header {
   font-weight: 400;
   line-height: 1.46;
   margin-bottom: 37px;
+}
+
+.apointment-service::before {
+  content: '';
+  display: inline-block;
+  width: 72px;
+  height: 95px;
+  background: url('../img/icon-1-green.svg') 0 0 no-repeat;
+  margin-top: -94px;
+  transition: all 0.3s;
+}
+
+.apointment-service:hover::before {
+  background: url('../img/icon-1-blue.svg') 0 0 no-repeat;
+  cursor: pointer;
+}
+
+.consultation-service::before {
+  content: '';
+  display: inline-block;
+  width: 72px;
+  height: 95px;
+  background: url('../img/icon-2-green.svg') 0 0 no-repeat;
+  margin-top: -94px;
+  transition: all 0.3s;
+}
+
+.consultation-service:hover::before {
+  background: url('../img/icon-2-blue.svg') 0 0 no-repeat;
+  cursor: pointer;
+}
+
+.enjoy-service::before {
+  content: '';
+  display: inline-block;
+  width: 72px;
+  height: 95px;
+  background: url('../img/icon-3-green.svg') 0 0 no-repeat;
+  margin-top: -94px;
+  transition: all 0.3s;
+}
+
+.enjoy-service:hover::before {
+  background: url('../img/icon-3-blue.svg') 0 0 no-repeat;
+  cursor: pointer;
 }
 
 .work-link {
