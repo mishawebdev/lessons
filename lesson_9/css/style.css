@@ -7,7 +7,7 @@ header {
   margin: 0 auto;
 }
 
-/* consulting */
+/* ======== Consulting section - task 1 ========= */
 .container-consulting {
   padding: 140px 0;
   max-width: 692px;
@@ -24,8 +24,6 @@ header {
   font-weight: 600;
   margin-bottom: 15px;
 }
-
-
 
 .title-vision,
 .title-mission {
@@ -117,8 +115,8 @@ header {
 
 /* ======== About us section - task 2 ========= */
 .container-about-us {
-  max-width: 1094px;
-  padding: 151px 350px 40px 69px;
+  padding: 140px 0;
+  max-width: 692px;
   margin: 0 auto;
 }
 
@@ -149,7 +147,7 @@ header {
   margin-bottom: 48px;
 }
 
-.text-about-us p:not(:last-child){
+.text-about-us p:not(:last-child) {
   line-height: 1.46;
   margin-bottom: 16px;
 }
@@ -157,7 +155,7 @@ header {
 .our-vision-wrap,
 .our-mission-wrap {
   border: 1px solid #e3e3e3;
-  padding: 28px 41px 28px 43px;
+  padding: 28px 41px 28px 38px;
 }
 
 .our-vision-wrap {
@@ -177,7 +175,7 @@ header {
   margin-bottom: 12px;
 }
 
-.title-checked::before{
+.title-checked::before {
   content: '';
   display: inline-block;
   background: url('../img/check-icon.svg') 0 0 no-repeat;
@@ -191,7 +189,7 @@ header {
   font-size: 18px;
   line-height: 1.46;
   color: #7d7d7d;
-  padding-left: 50px;
+  padding-left: 46px;
 }
 
 
@@ -204,9 +202,103 @@ header {
   background-color: #6b77e5;
   color: #ffffff;
   margin-bottom: 50px;
+  transition: background-color 0.3s;
 }
 
-/* task 4 */
+.link-more:hover {
+  background-color: #0d34e2;
+}
+
+/* ======== About us section - task 3 ========= */
+.container-work-process {
+  max-width: 1220px;
+  margin: 0 auto;
+  outline: 1px solid red;
+  text-align: center;
+}
+
+.title-work-process {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.22;
+  color: #37393f;
+  margin-bottom: 16px;
+}
+
+.title-work-process::before {
+  content: '';
+  display: inline-block;
+  margin-right: 6px;
+  width: 12px;
+  height: 12px;
+  background-color: #40ddb6;
+}
+
+.subtitle-work-process {
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  line-height: 1.2;
+  color: #37393f;
+  text-transform: capitalize;
+  font-weight: 700;
+  margin-bottom: 41px;
+}
+
+.work-wrap {
+  font-size: 0;
+
+}
+.service-wrap {
+  display: inline-block;
+  background-color: #f4f4f4;
+  max-width: 386px;
+  width: 100%;
+  padding: 58px 43px;
+  vertical-align: top;
+}
+
+
+.service-wrap:not(:last-child) {
+  margin-right: 31px;
+}
+
+.service-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  color: #37393f;
+  line-height: 1.28;
+  margin-bottom: 16px;
+}
+
+.work-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  color: #7d7d7d;
+  font-weight: 400;
+  line-height: 1.46;
+  margin-bottom: 37px;
+}
+
+.work-link {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  color: #6b77e5;
+  font-weight: 400;
+  line-height: 1.46;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration: transparent;
+  transition: color 0.3s;
+}
+
+.work-link:hover {
+  color: #0d34e2;
+}
+
+
+/* ======== Jewllery section - task 4 ========= */
 .container-jewellery {
   max-width: 1600px;
   margin: 0 auto;
