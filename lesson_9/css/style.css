@@ -226,6 +226,10 @@ header {
   margin-bottom: 16px;
 }
 
+.title-wrap {
+  margin-bottom: 41px;
+}
+
 .title-work-process::before {
   content: '';
   display: inline-block;
@@ -242,7 +246,6 @@ header {
   color: #37393f;
   text-transform: capitalize;
   font-weight: 700;
-  margin-bottom: 41px;
 }
 
 .work-wrap {
@@ -255,7 +258,6 @@ header {
   max-width: 386px;
   width: 100%;
   padding: 58px 43px 58px 43px;
-  vertical-align: top;
 }
 
 .service-wrap:not(:last-child) {
@@ -282,53 +284,14 @@ header {
 
 .deco-icon {
 margin-top: -95px;
-
+margin-bottom: 18px;
 }
 
-/* .apointment-service::before {
-  content: '';
-  display: inline-block;
-  width: 72px;
-  height: 95px;
-  background: url('../img/icon-1-green.svg') 0 0 no-repeat;
-  margin-top: -94px;
-  transition: all 0.3s;
-}
-
-.apointment-service:hover::before {
-  background: url('../img/icon-1-blue.svg') 0 0 no-repeat;
-  cursor: pointer;
-} */
-
-.consultation-service::before {
-  content: '';
-  display: inline-block;
-  width: 72px;
-  height: 95px;
-  background: url('../img/icon-2-green.svg') 0 0 no-repeat;
-  margin-top: -94px;
-  transition: all 0.3s;
-}
-
-.consultation-service:hover::before {
-  background: url('../img/icon-2-blue.svg') 0 0 no-repeat;
+.deco-icon img {
   cursor: pointer;
 }
 
-.enjoy-service::before {
-  content: '';
-  display: inline-block;
-  width: 72px;
-  height: 95px;
-  background: url('../img/icon-3-green.svg') 0 0 no-repeat;
-  margin-top: -94px;
-  transition: all 0.3s;
-}
 
-.enjoy-service:hover::before {
-  background: url('../img/icon-3-blue.svg') 0 0 no-repeat;
-  cursor: pointer;
-}
 
 .work-link {
   font-family: 'Inter', sans-serif;
