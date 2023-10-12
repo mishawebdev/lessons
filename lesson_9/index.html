@@ -11,11 +11,11 @@
 <body>
   <header>
     <nav>
-      <ul>
-        <li>Task 1</li>
-        <li>Task 2</li>
-        <li>Task 3</li>
-        <li>Task 4</li>
+      <ul style="display: inline; float: left;">
+        <li style="display: inline; float: left; margin-right: 40px;">Task 1</li>
+        <li style="display: inline; float: left; margin-right: 40px;">Task 2</li>
+        <li style="display: inline; float: left; margin-right: 40px;">Task 3</li>
+        <li style="display: inline; float: left; margin-right: 40px;">Task 4</li>
       </ul>
     </nav>
   </header>
@@ -98,30 +98,30 @@
           corporate strategy
         </p>
       </div>
-
+      <!-- 2 boxes -->
       <div class="checked-block-wrap">
 
         <div class="our-vision-wrap">
 
-
-
-          <h4 class="title-checked">Our Vision</h4>
-          <div class="text-checked">
-            <p>
-              Capitalize on low hanging fruit to identify a ballpark value added activity to beta clickthroughs.
-            </p>
+          <div class="content-wrap">
+            <h4 class="title-checked">Our Vision</h4>
+            <div class="text-checked">
+              <p>
+                Capitalize on low hanging fruit to identify a ballpark value added activity to beta clickthroughs.
+              </p>
+            </div>
           </div>
-
-
         </div>
 
         <div class="our-mission-wrap">
 
-          <h4 class="title-checked">Our Mision</h4>
-          <div class="text-checked">
-            <p>
-              Podcasting operational change management inside of workflows to establish a framework.
-            </p>
+          <div class="content-wrap">
+            <h4 class="title-checked">Our Mision</h4>
+            <div class="text-checked">
+              <p>
+                Podcasting operational change management inside of workflows to establish a framework.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -143,7 +143,9 @@
       <div class="work-wrap">
         <div class="service-wrap apointment-service">
           <div class="deco-icon">
-            <img src="img/icon-1-green.svg" alt="icon">
+            <a href="#">
+              <img src="img/icon-1.svg" alt="icon">
+            </a>
           </div>
           <h3 class="service-title">Make Appointment</h3>
 
@@ -160,7 +162,9 @@
 
         <div class="service-wrap consultation-service">
           <div class="deco-icon">
-            <img src="img/icon-2-green.svg" alt="icon">
+            <a href="#">
+              <img src="img/icon-2.svg" alt="icon">
+            </a>
           </div>
           <h3 class="service-title">Consultation</h3>
 
@@ -177,7 +181,9 @@
 
         <div class="service-wrap enjoy-service">
           <div class="deco-icon">
-            <img src="img/icon-3-green.svg" alt="icon">
+            <a href="#">
+              <img src="img/icon-3.svg" alt="icon">
+            </a>
           </div>
           <h3 class="service-title">Enjoy the Service</h3>
 
@@ -201,28 +207,42 @@
 
     <div class="container-jewellery">
 
-      <h2>We Develop Create Custom Jewels.</h2>
+      <div class="title-develop-wrap">
+        <h2 class="title-develop">
+          We Develop Create Custom Jewels.
+        </h2>
+      </div>
 
       <div class="images-wrap">
 
         <div class="img-first-wrap">
-          <div class="img-first">
-            <img src="img/ring-img-1.jpg" alt="ring">
-          </div>
+          <a class="jewel-item-link" href="#">
+            <div class="img-first ring-first">
+              <img src="img/ring-img-1.jpg" alt="ring">
+            </div>
 
-          <h4>Embossed hoop earrings</h4>
-          <span>$144.00</span>
+            <h4 class="jewel-item-name">Embossed hoop earrings</h4>
+            <span class="jewel-item-price">$144.00</span>
+          </a>
         </div>
 
         <div class="img-second-wrap">
-          <p>#02 new jewellery collection</p>
-          <div class="img-second">
-            <img src="img/ring-img-2.jpg" alt="ring">
-          </div>
 
-          <h4>Embossed hoop earrings</h4>
-          <span>$144.00</span>
+          <div class="card-title-wrap">
+            <h4 class="jewel-card-title">
+              #02 <br> new jewellery collection
+            </h4>
+          </div>
+          <a class="jewel-item-link" href="#">
+            <div class="img-second ring-second">
+              <img src="img/ring-img-2.jpg" alt="ring">
+            </div>
+
+            <h4 class="jewel-item-name">Embossed hoop earrings</h4>
+            <span class="jewel-item-price">$144.00</span>
+          </a>
         </div>
+
       </div>
     </div>
   </main>
