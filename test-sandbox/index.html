@@ -159,44 +159,44 @@
 /* =============== Псевдокласи ================= */
 
 /* Анатомія псевдокласів */
-/*
+
 селектор:псевдоклас{
 
 }
 селектор#1:псевдоклас селектор#2{
 	
 }
-*/
+
 
 /* Псевдокласи стану */
-/*
-:hover
+
+/* :hover
 Звернення до елемента у стані "при наведенні миші"
 Застосовується до будь-якого елемента
 */
-/* 
+
 .link {
 	
 }
-*/
+
 .link:hover {
 	color: rgb(25, 228, 25);
 	border-bottom: 3px dashed;
 }
-/*
+
 ul:hover {
 	background-color: #7a956b;
 }
 ul:active {
 	background-color: #77608d;
 }
-*/
-/*
+
+
 main:hover .link {
 	color: red;
 }
-*/
-/*
+
+
 .hover-expl {
 }
 .hover-expl__block {
@@ -212,38 +212,38 @@ main:hover .link {
 	visibility: visible;
 	opacity: 1;
 }
-*/
+
 
 /*
 :active Звернення до елемента у стані 
 "при натиснутій клавіші миші"
 */
-/*
+
 .link:active {
 	color: blue;
 }
-*/
+
 
 /*
 :visited Звернення до елемента 
 у стані "відвіданого посилання"
 обмежена кількість властивостей
 */
-/*
+
 .link:visited {
 	color: grey;
-}*/
+}
 
 /*
 :focus Звернення до 
 елементу у стані "фокусу"
 */
-/*
+
 .link:focus {
 	outline: 3px dotted red;
 	color: yellow;
 }
-*/
+
 
 /*
 :target
@@ -276,57 +276,57 @@ main:hover .link {
 	font-size: 20px;
 	line-height: 130%;
 }
-/*
+
 .text *:last-child {
 	margin-bottom: 0;
-}*/
+}
 
 /*
 :first-child
 Звернення до першого елементу в коді
 */
-/*
+
 .text p:first-child {
 	background-color: #7a956b;
 }
-*/
-/*
+
+
 .text *:first-child {
 	background-color: #7a956b;
 }
-*/
+
 /* 
 :first-of-type
 Звернення до першого вказаного 
 об'єкту в коді
 */
-/*
+
 .text p:first-of-type {
 	background-color: #7a956b;
 }
-*/
+
 
 /*
 :last-child
 Звернення до останього 
 елементу в коді
 */
-/*
+
 .text p:last-child {
 	text-transform: uppercase;
 }
-*/
+
 
 /*
 :last-of-type
 Звернення до останього 
 вказаного об'єкту в коді
 */
-/*
+
 .text p:last-of-type {
 	text-transform: uppercase;
 }
-*/
+
 
 /*
 :nth-child(значення/алгоритм)
@@ -334,31 +334,28 @@ main:hover .link {
 
 odd - через один не парні
 even - через один парні
-
-
 */
-/* 
+
 .text p:nth-child(2) {
 	background-color: #7a956b;
 }
- */
-/*
+
+
 .text p:nth-child(even) {
 	background-color: grey;
 }
-*/
 
-/*
+
 .text p:nth-child(1),
 .text p:nth-child(4),
 .text p:nth-child(8) {
 	background-color: #7a956b;
 }
-*/
+
 
 /* Алгоритм "кожен-через" */
 /* коженn + починаючи з */
-/*
+
 .text p:nth-child(3n + 1) {
 	background-color: #7a956b;
 }
@@ -367,7 +364,7 @@ even - через один парні
 }
 .text p:nth-child(3n + 3) {
 	background-color: #77608d;
-}*/
+}
 
 /* ---------------- */
 
@@ -382,7 +379,7 @@ even - через один парні
 
 /* ---------------- */
 /* Додадково */
-/* :has, :is */
+:has, :is 
 
 /* Гарна практика */
 .block {
@@ -391,16 +388,16 @@ even - через один парні
 }
 
 /* якщо margin однакові */
-/* 
+
 .block > *:not(:last-child) {
 	margin-bottom: 20px;
 }
- */
+
 /* якщо margin НЕ однакові */
-/*
+
 .block > *:last-child {
 	margin-bottom: 0;
-}*/
+}
 
 /* Універсальний варіант */
 .block > * {
@@ -449,14 +446,14 @@ even - через один парні
 тому що ці теги не можуть містити в собі контенту.
 */
 
-/*
+
 ::before{}
 ::after{}
 
 !!!!! Псевдоелементи - рядкові !!!!!
 Властивість content: ""; - Обов'язкова!
-*/
-/*
+
+
 .section {
 	outline: 5px solid red;
 }
@@ -466,9 +463,9 @@ even - через один парні
 .section::after {
 	content: ")";
 }
-*/
 
-/* 
+
+
 .deco-title {
 	font-weight: 700;
 	font-size: 28px;
@@ -483,9 +480,8 @@ even - через один парні
 	margin-right: 15px;
 	margin-bottom: -3px;
 }
- */
 
-/* 
+
 .list {
 }
 .list__item {
@@ -504,11 +500,11 @@ even - через один парні
 }
 
 /* Взаємодія псевдокласа та псевдоелемента */
-/* 
+
 .list__item:hover::before {
 	opacity: 1;
 }
- */
+
 
 .list {
 }
@@ -526,7 +522,7 @@ even - через один парні
 	display: inline-block;
 }
 
-/* 
+
 .test::before {
 	width: 50px;
 	height: 50px;
@@ -535,9 +531,8 @@ even - через один парні
 	content: "";
 }
 
- */
 
-/*
+
 .line-title {
 	display: inline-block;
 }
@@ -549,7 +544,6 @@ even - через один парні
 	width: 80%;
 	background-color: green;
 }
-*/
 
   </code>
 </pre>
