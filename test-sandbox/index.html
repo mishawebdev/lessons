@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Sandbox</title>
+</head>
+
+<body>
+  <p class="codepen" data-height="500" data-default-tab="html,result" data-slug-hash="WNLWqMm" data-editable="true" data-user="mws77" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+    <span>See the Pen <a href="https://codepen.io/mws77/pen/WNLWqMm">
+    for test</a> by Misha (<a href="https://codepen.io/mws77">@mws77</a>)
+    on <a href="https://codepen.io">CodePen</a>.</span>
+  </p>
+  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+  =============== LESSON 9 ==================
+<pre>
+  <code>
+    &lt;main&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;a href="#" class="link"&gt;я посилання&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;a href="#" class="link"&gt;я посилання&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;a href="#" class="link"&gt;я посилання&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;a href="#" class="link"&gt;я посилання&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;a href="https://google.eu" class="link"&gt;я посилання&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;a href="#" class="link"&gt;я посилання&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;a href="#" class="link"&gt;я посилання&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;a href="#" class="link"&gt;я посилання&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;a href="#" class="link"&gt;я посилання&lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+    
+
+    &lt;div class="hover-expl"&gt;
+      &lt;div class="hover-expl__block"&gt;
+        &lt;a href="#"&gt;123456&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    
+    &lt;a href="#box-1" class="open-box"&gt;Показати блок #1&lt;/a&gt;
+    &lt;a href="#box-2" class="open-box"&gt;Показати блок #2&lt;/a&gt;
+    &lt;a href="#box-3" class="open-box"&gt;Показати блок #3&lt;/a&gt;
+    &lt;p&gt;
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius delectus fuga nam reprehenderit culpa aperiam quibusdam mollitia sint atque, sequi ducimus quae recusandae voluptatem quasi inventore suscipit adipisci. Nisi, neque!
+    &lt;/p&gt;
+    &lt;div id="box-1" class="box"&gt;1&lt;/div&gt;
+    &lt;div id="box-2" class="box"&gt;2&lt;/div&gt;
+    &lt;div id="box-3" class="box"&gt;3&lt;/div&gt;
+    
+
+    &lt;div class="text"&gt;
+      &lt;p&gt;
+        1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, minus quidem molestiae ut autem quasi officia voluptate quam. Excepturi itaque iusto ea enim eos nostrum cupiditate, officia in quae voluptatem?
+      &lt;/p&gt;
+      &lt;p&gt;
+        2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, minus quidem molestiae ut autem quasi officia voluptate quam. Excepturi itaque iusto ea enim eos nostrum cupiditate, officia in quae voluptatem?
+      &lt;/p&gt;
+      &lt;p&gt;
+        3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, minus quidem molestiae ut autem quasi officia voluptate quam. Excepturi itaque iusto ea enim eos nostrum cupiditate, officia in quae voluptatem?
+      &lt;/p&gt;
+      &lt;p&gt;
+        4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, minus quidem molestiae ut autem quasi officia voluptate quam. Excepturi itaque iusto ea enim eos nostrum cupiditate, officia in quae voluptatem?
+      &lt;/p&gt;
+      &lt;p&gt;
+        5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, minus quidem molestiae ut autem quasi officia voluptate quam. Excepturi itaque iusto ea enim eos nostrum cupiditate, officia in quae voluptatem?
+      &lt;/p&gt;
+      &lt;p&gt;
+        6 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, minus quidem molestiae ut autem quasi officia voluptate quam. Excepturi itaque iusto ea enim eos nostrum cupiditate, officia in quae voluptatem?
+      &lt;/p&gt;
+      &lt;p&gt;
+        7 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, minus quidem molestiae ut autem quasi officia voluptate quam. Excepturi itaque iusto ea enim eos nostrum cupiditate, officia in quae voluptatem?
+      &lt;/p&gt;
+    &lt;/div&gt;
+
+
+    Гарна практика
+
+    &lt;div class="block"&gt;
+      &lt;h1 class="block__title"&gt;Lorem ipsum dolor sit amet.&lt;/h1&gt;
+      &lt;div class="block__text"&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet consectetur, adipisicing elit. &lt;a href="#"&gt;Esse&lt;/a&gt; magni veritatis sunt quasi animi veniam placeat temporibus voluptatem vero quo officia consectetur rerum cumque facilis magnam, hic tempora! Fugiat, quasi!&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;a href="#" class="block__link"&gt;Link&lt;/a&gt;
+    &lt;/div&gt;
+    
+
+    &lt;div class="section"&gt;
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum magni explicabo exercitationem, dolore voluptates aut deserunt assumenda, omnis laboriosam delectus nihil perferendis repudiandae tempora vel molestiae molestias quia asperiores necessitatibus.
+    &lt;/div&gt;
+
+
+    &lt;h2 class="deco-title"&gt;
+      Hello Jhanvi
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi vero tempore temporibus nihil officia iusto dicta nulla voluptates reprehenderit adipisci, impedit pariatur quos culpa fugiat. Libero beatae ut ratione dolores!
+    &lt;/h2&gt;
+    
+
+
+    &lt;ul class="list"&gt;
+      &lt;li class="list__item"&gt;
+        Item #1
+      &lt;/li&gt;
+      &lt;li class="list__item"&gt;
+        Item #2 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda voluptas ab asperiores ex voluptates unde quisquam, eius iure non corrupti vero, tenetur facere sed quibusdam, sapiente error! Voluptatem, quae ut.
+      &lt;/li&gt;
+      &lt;li class="list__item"&gt;
+        Item #3
+      &lt;/li&gt;
+      &lt;li class="list__item"&gt;
+        Item #4
+      &lt;/li&gt;
+    &lt;/ul&gt;
+    
+    &lt;div class="test"&gt;&lt;/div&gt;
+
+
+    &lt;div class="line-title"&gt;
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, enim pariatur ab nisi architecto recusandae dolores suscipit, nulla quam nam eos ex autem dignissimos accusantium voluptates ducimus optio, deserunt libero.
+    &lt;/div&gt;
+    
+
+  &lt;/main&gt;
+
+  </сode>
+  &lt;!-- CSS -- &gt;
+  <code>
+.link {
+	font-size: 30px;
+	color: green;
+}
+
+/* =============== Псевдокласи ================= */
+
+/* Анатомія псевдокласів */
+/*
+селектор:псевдоклас{
+
+}
+селектор#1:псевдоклас селектор#2{
+	
+}
+*/
+
+/* Псевдокласи стану */
+/*
+:hover
+Звернення до елемента у стані "при наведенні миші"
+Застосовується до будь-якого елемента
+*/
+/* 
+.link {
+	
+}
+*/
+.link:hover {
+	color: rgb(25, 228, 25);
+	border-bottom: 3px dashed;
+}
+/*
+ul:hover {
+	background-color: #7a956b;
+}
+ul:active {
+	background-color: #77608d;
+}
+*/
+/*
+main:hover .link {
+	color: red;
+}
+*/
+/*
+.hover-expl {
+}
+.hover-expl__block {
+	width: 300px;
+	height: 300px;
+	background-color: green;
+	visibility: hidden;
+	opacity: 0;
+
+	transition: all 0.8s;
+}
+.hover-expl:hover .hover-expl__block {
+	visibility: visible;
+	opacity: 1;
+}
+*/
+
+/*
+:active Звернення до елемента у стані 
+"при натиснутій клавіші миші"
+*/
+/*
+.link:active {
+	color: blue;
+}
+*/
+
+/*
+:visited Звернення до елемента 
+у стані "відвіданого посилання"
+обмежена кількість властивостей
+*/
+/*
+.link:visited {
+	color: grey;
+}*/
+
+/*
+:focus Звернення до 
+елементу у стані "фокусу"
+*/
+/*
+.link:focus {
+	outline: 3px dotted red;
+	color: yellow;
+}
+*/
+
+/*
+:target
+Звернення до елемента у стані
+"ефекту від посилання з іншого об'єкту"
+*/
+
+.open-box {
+	font-size: 20px;
+}
+.box {
+	width: 300px;
+	height: 300px;
+	background-color: #794f45;
+	visibility: hidden;
+	display: inline-block;
+}
+.box:target {
+	visibility: visible;
+}
+
+
+/* Псевдокласи положення у коді */
+
+.text {
+	background-color: #7a956b;
+	padding: 20px;
+}
+.text p {
+	font-size: 20px;
+	line-height: 130%;
+}
+/*
+.text *:last-child {
+	margin-bottom: 0;
+}*/
+
+/*
+:first-child
+Звернення до першого елементу в коді
+*/
+/*
+.text p:first-child {
+	background-color: #7a956b;
+}
+*/
+/*
+.text *:first-child {
+	background-color: #7a956b;
+}
+*/
+/* 
+:first-of-type
+Звернення до першого вказаного 
+об'єкту в коді
+*/
+/*
+.text p:first-of-type {
+	background-color: #7a956b;
+}
+*/
+
+/*
+:last-child
+Звернення до останього 
+елементу в коді
+*/
+/*
+.text p:last-child {
+	text-transform: uppercase;
+}
+*/
+
+/*
+:last-of-type
+Звернення до останього 
+вказаного об'єкту в коді
+*/
+/*
+.text p:last-of-type {
+	text-transform: uppercase;
+}
+*/
+
+/*
+:nth-child(значення/алгоритм)
+Звернення до конкретного елементу в коді
+
+odd - через один не парні
+even - через один парні
+
+
+*/
+/* 
+.text p:nth-child(2) {
+	background-color: #7a956b;
+}
+ */
+/*
+.text p:nth-child(even) {
+	background-color: grey;
+}
+*/
+
+/*
+.text p:nth-child(1),
+.text p:nth-child(4),
+.text p:nth-child(8) {
+	background-color: #7a956b;
+}
+*/
+
+/* Алгоритм "кожен-через" */
+/* коженn + починаючи з */
+/*
+.text p:nth-child(3n + 1) {
+	background-color: #7a956b;
+}
+.text p:nth-child(3n + 2) {
+	background-color: #794f45;
+}
+.text p:nth-child(3n + 3) {
+	background-color: #77608d;
+}*/
+
+/* ---------------- */
+
+/*
+:not(селектор) 
+Псевдоклас виключення
+*/
+
+.text p:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+/* ---------------- */
+/* Додадково */
+/* :has, :is */
+
+/* Гарна практика */
+.block {
+	background-color: #77608d;
+	padding: 25px;
+}
+
+/* якщо margin однакові */
+/* 
+.block > *:not(:last-child) {
+	margin-bottom: 20px;
+}
+ */
+/* якщо margin НЕ однакові */
+/*
+.block > *:last-child {
+	margin-bottom: 0;
+}*/
+
+/* Універсальний варіант */
+.block > * {
+	/* Відступ за замовченням */
+	margin-bottom: 20px;
+}
+
+.block__title {
+	font-weight: 700;
+	font-size: 40px;
+}
+.block__text {
+	line-height: 140%;
+	font-size: 18px;
+	/* Задаємо свій відступ за потреби */
+	margin-bottom: 30px;
+}
+.block__link {
+	font-size: 20px;
+	color: yellow;
+	text-decoration: underline;
+}
+.block__link:hover {
+	text-decoration: none;
+}
+
+/* Прибираємо відступ у останього елемента */
+.block > *:last-child {
+	margin-bottom: 0;
+}
+
+/* 
+Псевдокласи мають більший пріоритет
+(уточнення)
+*/
+
+/* =============== Псевдоелементи ================= */
+
+/* Анатомія псевдоелементів */
+/*
+селектор::псевдоелемент{
+
+}
+Псевдоелементи не можна додати до 
+одинарних тегів(наприклад img,br), 
+тому що ці теги не можуть містити в собі контенту.
+*/
+
+/*
+::before{}
+::after{}
+
+!!!!! Псевдоелементи - рядкові !!!!!
+Властивість content: ""; - Обов'язкова!
+*/
+/*
+.section {
+	outline: 5px solid red;
+}
+.section::before {
+	content: "(";
+}
+.section::after {
+	content: ")";
+}
+*/
+
+/* 
+.deco-title {
+	font-weight: 700;
+	font-size: 28px;
+}
+.deco-title::before {
+	background-color: #8a33fd;
+	width: 6px;
+	height: 28px;
+	display: inline-block;
+	border-radius: 10px;
+	content: "";
+	margin-right: 15px;
+	margin-bottom: -3px;
+}
+ */
+
+/* 
+.list {
+}
+.list__item {
+}
+.list__item::before {
+	content: "";
+	background: url("../img/li.svg") 0 0 no-repeat;
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	opacity: 0.2;
+}
+
+.list__item:not(:last-child) {
+	margin-bottom: 15px;
+}
+
+/* Взаємодія псевдокласа та псевдоелемента */
+/* 
+.list__item:hover::before {
+	opacity: 1;
+}
+ */
+
+.list {
+}
+.list__item {
+}
+.list__item:not(:last-child) {
+	margin-bottom: 15px;
+}
+.list__item::before {
+	content: "";
+	background-color: #794f45;
+	border-radius: 50%;
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+}
+
+/* 
+.test::before {
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	background: url("../img/honey.jpg") 0 0 no-repeat;
+	content: "";
+}
+
+ */
+
+/*
+.line-title {
+	display: inline-block;
+}
+.line-title::after {
+	content: "";
+	display: block;
+	margin-top: 4px;
+	height: 2px;
+	width: 80%;
+	background-color: green;
+}
+*/
+
+  </code>
+</pre>
+</html>
