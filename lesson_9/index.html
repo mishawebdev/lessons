@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -10,14 +10,20 @@
 
 <body>
   <header>
-    <nav>
-      <ul style="display: inline; float: left;">
-        <li style="display: inline; float: left; margin-right: 40px;">Task 1</li>
-        <li style="display: inline; float: left; margin-right: 40px;">Task 2</li>
-        <li style="display: inline; float: left; margin-right: 40px;">Task 3</li>
-        <li style="display: inline; float: left; margin-right: 40px;">Task 4</li>
-      </ul>
-    </nav>
+    <ul class="menu-list">
+      <li class="list-item">
+        <a class="link-item" href="#we-care">"We Care..."</a>
+      </li>
+      <li class="list-item">
+        <a class="link-item" href="#work-process">How We Work</a>
+      </li>
+      <li class="list-item">
+        <a class="link-item" href="#jewels">Jewels</a>
+      </li>
+      <li class="list-item">
+        <a class="link-item" href="#experiments">Experiments & Game</a>
+      </li>
+    </ul>
   </header>
 
   <main>
@@ -25,7 +31,6 @@
     <!-- consulting -->
     <!-- ======== Consulting section - task 1 ========= -->
     <div class="container-consulting">
-      <p>Task 1</p>
       <h1 class="title-meeting">why us for international business management consulting!
       </h1>
 
@@ -84,8 +89,7 @@
     <!-- ======== About us section - task 2 ========= -->
 
     <div class="container-about-us">
-      <p>Task 2</p>
-      <h3 class="title-welcome">Welcome Whitecollar</h3>
+      <h3 class="title-welcome" id="we-care">Welcome Whitecollar</h3>
       <h3 class="title-meeting title-about-us">We Care About Your Business Plan.</h3>
 
       <div class="text-meeting text-about-us">
@@ -133,22 +137,18 @@
 
     <!-- ======== About us section - task 3 =========  -->
     <div class="container-work-process">
-      <p style="text-align: left;">Task 3</p>
 
-      <div class="title-wrap">
+      <div class="title-wrap" id="work-process">
         <h2 class="title-work-process">Work Process</h2>
         <h2 class="subtitle-work-process">How We Work</h2>
       </div>
 
       <div class="work-wrap">
-        <div class="service-wrap apointment-service">
+        <div class="service-wrap">
           <div class="deco-icon">
-            <a href="#">
-              <img src="img/icon-1.svg" alt="icon">
-            </a>
+            <a class="appointment icon-link" href="#"></a>
           </div>
           <h3 class="service-title">Make Appointment</h3>
-
           <div class="work-text">
             <p>
               Leverage agile frameworks provide
@@ -156,18 +156,16 @@
               value proposition.
             </p>
           </div>
-
           <a class="work-link" href="#">Testimonials</a>
         </div>
 
-        <div class="service-wrap consultation-service">
+        <div class="service-wrap">
+
           <div class="deco-icon">
-            <a href="#">
-              <img src="img/icon-2.svg" alt="icon">
-            </a>
+            <a class="consultation icon-link" href="#"></a>
           </div>
+
           <h3 class="service-title">Consultation</h3>
-
           <div class="work-text">
             <p>
               Leverage agile frameworks provide
@@ -175,18 +173,16 @@
               value proposition.
             </p>
           </div>
-
           <a class="work-link" href="#">Testimonials</a>
         </div>
 
-        <div class="service-wrap enjoy-service">
+        <div class="service-wrap">
+
           <div class="deco-icon">
-            <a href="#">
-              <img src="img/icon-3.svg" alt="icon">
-            </a>
+            <a class="satisfaction icon-link" href="#"></a>
           </div>
-          <h3 class="service-title">Enjoy the Service</h3>
 
+          <h3 class="service-title">Enjoy the Service</h3>
           <div class="work-text">
             <p>
               Leverage agile frameworks provide
@@ -197,9 +193,7 @@
 
           <a class="work-link" href="#">Testimonials</a>
         </div>
-
       </div>
-
     </div>
 
 
@@ -207,7 +201,7 @@
 
     <div class="container-jewellery">
 
-      <div class="title-develop-wrap">
+      <div class="title-develop-wrap" id="jewels">
         <h2 class="title-develop">
           We Develop Create Custom Jewels.
         </h2>
@@ -245,7 +239,98 @@
 
       </div>
     </div>
+
+    <!-- ======== Experiments & Tasks =========  -->
+    <div class="container-experiments" id="experiments">
+      <h3 class="title-experiments">Experiments & Tasks</h3>
+
+      <!-- before & after -->
+      <div class="before-after">
+        <div class="text-wrap">
+          <p>
+            Start before you are ready
+          </p>
+        </div>
+      </div>
+
+      <!-- pseudoclasses -->
+      <div class="pseudoclasses">
+        <ul class="list-of-items">
+          <li class="experiment-item">Lorem ipsum dolor sit amet consectetur.</li>
+          <li class="experiment-item"> nth-child(2)</li>
+          <li class="experiment-item">Lorem ipsum dolor sit amet consectetur.</li>
+          <li class="experiment-item">Lorem ipsum dolor sit amet consectetur.</li>
+          <li class="experiment-item">Lorem ipsum dolor sit amet consectetur.</li>
+          <li class="experiment-item">Lorem ipsum dolor sit amet consectetur.</li>
+          <li class="experiment-item">Lorem ipsum dolor sit amet consectetur.</li>
+          <li class="experiment-item">Lorem ipsum dolor sit amet consectetur.</li>
+          <li class="experiment-item">Lorem ipsum dolor sit amet consectetur.</li>
+          <li class="experiment-item">Lorem ipsum dolor sit amet consectetur.</li>
+          <li class="experiment-item">Lorem ipsum dolor sit amet consectetur.</li>
+          <li class="experiment-item">Lorem ipsum dolor sit amet consectetur.</li>
+          <li class="experiment-item">Lorem ipsum dolor sit amet consectetur.</li>
+          <li class="experiment-item">Lorem ipsum dolor sit amet consectetur.</li>
+          <li class="experiment-item">Lorem ipsum dolor sit amet consectetur.</li>
+          <li class="experiment-item">Lorem ipsum dolor sit amet consectetur.</li>
+        </ul>
+      </div>
+
+      <!-- ========= GAME ========= -->
+      <h4 class="title-game">Let`s play a game</h4>
+      <div class="game">
+        <div class="line-start"></div>
+        <div class="line-1"></div>
+        <div class="line-2"></div>
+        <div class="line-3"></div>
+        <div class="line-4"></div>
+        <div class="line-5"></div>
+        <div class="target"></div>
+      </div>
+
+
+      <!-- target experiment -->
+      <div class="target-container">
+
+        <a href="#box-1" class="open-box">Показати блок #1</a>
+        <a href="#box-2" class="open-box">Показати блок #2</a>
+        <a href="#box-3" class="open-box">Показати блок #3</a>
+
+        <a href="#box-4" class="open-box">Показати блок #4</a>
+        <a href="#box-5" class="open-box">Показати блок #5</a>
+        <a href="#box-6" class="open-box">Показати блок #6</a>
+
+        <a href="#box-7" class="open-box">Показати блок #7</a>
+        <a href="#box-8" class="open-box">Показати блок #8</a>
+        <a href="#box-9" class="open-box">Показати блок #9</a>
+        <!-- <p>mini gallery</p> -->
+        <div class="box-wrap">
+          <div id="box-1" class="box">1</div>
+          <div id="box-2" class="box box-2">2</div>
+          <div id="box-3" class="box box-3">3</div>
+
+          <div id="box-4" class="box box-4">4</div>
+          <div id="box-5" class="box box-5">5</div>
+          <div id="box-6" class="box box-6">6</div>
+
+          <div id="box-7" class="box box-7">7</div>
+          <div id="box-8" class="box box-8">8</div>
+          <div id="box-9" class="box box-9">9</div>
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+
   </main>
+
+  <footer class="footer">
+    <div class="footer-to-top">
+      <a href="#top">To top</a>
+    </div>
+  </footer>
 </body>
 
 </html>

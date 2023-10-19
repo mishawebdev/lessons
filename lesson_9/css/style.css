@@ -3,9 +3,45 @@
 @import url('reset.css');
 
 header {
-  max-width: 692px;
+  max-width: 1500px;
   margin: 0 auto;
 }
+
+.menu-list {
+  text-align: center;
+}
+
+.list-item {
+  display: inline-block;
+}
+
+.link-item {
+  margin-right: 5px;
+  background-color: blueviolet;
+  color: #fff;
+  font-size: 26px;
+  padding: 15px 10px;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 5px;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.link-item:focus{
+  outline: none;
+  outline: 7px solid #7cff25;
+}
+
+.link-item:hover {
+  background-color: #d65113;
+}
+
+.link-item:active {
+  color: #40ddb6;
+}
+
 
 /* ======== Consulting section - task 1 ========= */
 .container-consulting {
@@ -72,8 +108,8 @@ header {
 .title-benefits {
   font-family: 'Poppins', sans-serif;
   font-size: 25px;
-  font-weight: 600;
   line-height: 1.27;
+  font-weight: 600;
   color: #37393f;
   margin-bottom: 15px;
 }
@@ -89,28 +125,28 @@ header {
 
 .list-benefits {
   font-family: 'Inter', sans-serif;
+  line-height: 1.27;
 }
 
 .benefits-item {
   font-size: 18px;
-  color: #7d7d7d;
-  line-height: 1.2;
-  margin-bottom: 30px;
+  line-height: 1.22;
   min-height: 27px;
-  line-height: normal;
+  color: #7d7d7d;
 }
 
-.benefits-item:last-child {
-  margin-bottom: 0;
+.benefits-item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .benefits-item::before {
   content: '';
   display: inline-block;
-  background: url('../img/check-icon.svg') 0 0 no-repeat;
+  background: url('../img/check-icon.svg') 50% no-repeat;
   width: 27px;
   height: 27px;
   margin-right: 8px;
+  margin-bottom: -7px;
 }
 
 /* ======== About us section - task 2 ========= */
@@ -216,7 +252,6 @@ header {
 .container-work-process {
   max-width: 1220px;
   margin: 0 auto;
-  outline: 1px solid red;
   text-align: center;
 }
 
@@ -287,25 +322,35 @@ header {
   margin-bottom: 37px;
 }
 
-.deco-icon{
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -95px;
-  margin-bottom: 18px;
+.deco-icon {
+  margin: -95px auto 18px;
   height: 72px;
   width: 72px;
-  background-color: #40ddb6;
   border-radius: 50%;
-  cursor: pointer;
+  background-color: #40ddb6;
   transition: background-color 0.3s;
+}
+
+.icon-link {
+  display: inline-block;
+  width: 72px;
+  height: 72px;
+}
+
+.appointment {
+  background: url('../img/icon-1.svg') 14px 14px no-repeat;
+}
+
+.consultation {
+  background: url('../img/icon-2.svg') 16px 16px no-repeat;
+}
+
+.satisfaction {
+  background: url('../img/icon-3.svg') 14px 14px no-repeat;
 }
 
 .deco-icon:hover {
   background-color: #6b77e5;
-}
-
-.deco-icon img {
-  padding-top: 15px;
 }
 
 .work-link {
@@ -424,4 +469,288 @@ header {
   font-family: 'Cormorant Infant', serif;
   font-size: 24px;
   line-height: 1.4;
+}
+
+/* ========= Experiments & Tasks ========= */
+.container-experiments {
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 50px;
+}
+
+.title-experiments {
+  font-size: 75px;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 70px 0;
+  border-radius: 15px;
+  border: 3px solid #d1cece;
+  text-align: center;
+  color: #d65113;
+  background: url('../img/graphy.png');
+  margin-bottom: 40px;
+}
+
+/* before & after */
+.before-after {
+  max-width: 1000px;
+  height: 300px;
+  background-image: linear-gradient(180deg, #ffe32c 25%, #52acff 100%);
+  border-radius: 15px;
+  margin-bottom: 40px;
+}
+
+.text-wrap p{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  font-size: 50px;
+  color: #ffffff;
+  padding: 120px 0;
+  text-transform: uppercase;
+  text-shadow: #af1515 1px 0 10px;
+}
+
+.text-wrap p::before,
+.text-wrap p::after {
+  content: '\262F';
+  display: inline-block;
+  color: #0b8f63;
+}
+
+.text-wrap p::after {
+  color: #e26e0f;
+}
+
+.text-wrap::after {
+  content: '';
+  display: block;
+  height: 5px;
+  width: 70%;
+  background-color: #d61414;
+  margin: -110px auto 150px;
+  text-align: center;
+}
+
+/* pseudoclasses */
+.pseudoclasses {
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+
+.list-of-items {
+  margin-bottom: 40px;
+}
+
+.list-of-items > .experiment-item {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+  max-width: 55%;
+  list-style-type: decimal;
+}
+
+.list-of-items *:last-child {
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.list-of-items .experiment-item:nth-child(2) {
+  background-color: darkgoldenrod;
+  color: #f1c1c1;
+}
+
+.list-of-items .experiment-item:nth-child(even) {
+  border-bottom: 2px solid #13d63d;
+}
+
+.list-of-items .experiment-item:nth-child(odd) {
+  background-color: burlywood;
+}
+
+.list-of-items .experiment-item:nth-child(9){
+  border: 2px dashed #af1515;
+}
+
+.list-of-items .experiment-item:nth-child(5n):hover{
+  background-color: chartreuse;
+}
+
+.list-of-items .experiment-item:nth-child(3n + 3) {
+  color: red;
+}
+.list-of-items .experiment-item:nth-child(3n + 3)::before {
+  content: '* I am 3n + 3 algorythm, made with before pseudoelement. * ';
+}
+
+/* GAME */
+
+.title-game {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  margin-bottom: 20px;
+  background-color: tomato;
+  padding: 20px 0;
+  color: rgb(76, 10, 129);
+}
+
+.game {
+  border-radius: 15px;
+  background-image: url('../img/purty_wood.png');
+  padding: 30px;
+  margin-bottom: 40px;
+}
+
+[class^="line"]:not(.line-start) {
+  padding: 20px;
+  background-color: cornsilk;
+  visibility: hidden;
+}
+
+.line-start {
+  width: 60px;
+  height: 60px;
+  background-color: tomato;
+}
+
+.line-2{
+  height: 150px;
+  width: 40px;
+  margin-left: auto;
+}
+
+.line-4 {
+  height: 150px;
+  width: 40px;
+}
+
+/* Механіка гри */
+
+.start:hover ~ .line-1,
+.line-1:hover {
+  visibility: visible;
+} 
+.line-1:hover ~ .line-2,
+.line-2:hover {
+  visibility: visible;
+}
+
+.line-2:hover ~ .line-3,
+.line-3:hover {
+  visibility: visible;
+}
+
+.line-3:hover ~ .line-4,
+.line-4:hover {
+  visibility: visible;
+}
+
+.line-4:hover ~ .line-4,
+.line-5:hover {
+  visibility: visible;
+}
+
+.line-5 {
+  width: 70%;
+}
+
+.target {
+  width: 340px;
+  height: 227px;
+}
+
+.line-5:hover ~ .target,
+.target:hover {
+  visibility: visible;
+  background: url("../img/mountains.jpg") 0 0 / cover no-repeat;
+}
+
+div .target {
+  width: 340px;
+  height: 227px;
+  margin-left: 580px;
+  margin-top: -100px;
+  visibility: hidden;
+  display: inline-block;
+} 
+
+[class^="line"]:hover + [class^="line"],
+[class^="line"]:hover + [class^="line"]:hover {
+  visibility: visible;
+}
+
+.footer {
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: 'Inter', sans-serif;
+}
+
+.footer-to-top{
+  width: 80px;
+  height: 80px;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* target experiment */
+.target-container {
+  max-width: 1000px;
+  outline: 1px solid green;
+}
+
+.open-box {
+	font-size: 20px;
+}
+
+.box-wrap {
+  font-size: 0;
+} 
+
+.box {
+	width: 300px;
+	height: 300px;
+	background-color: #8bd37d;
+	visibility: hidden;
+  display: inline-block;
+}
+
+.box-2 {
+  background-color: #ffe32c;
+}
+.box-3 {
+  background-color: #d65113;
+}
+.box-4 {
+  background-color: #d61414;
+}
+.box-5 {
+  background-color: #0d34e2;
+}
+.box-6 {
+  background-color: #af1515;
+}
+.box-7 {
+  background-color: #0b8f63;
+}
+.box-9 {
+  background-color: #ce20b7;
+}
+.box-9 {
+  background-color: #4431ee;
+}
+
+.box:target {
+	visibility: visible;
+  display: inline-block;
+}
+
+.footer-to-top a {
+  margin-top: 32px;
+  margin-left: 18px;
 }
