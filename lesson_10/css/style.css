@@ -1,0 +1,25 @@
+@import url("reset.css");
+
+
+
+.images-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  outline: 1px solid green;
+  margin-bottom: 20px;
+}
+
+p:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  background-color: #ccc;
+  display: block;
+  max-width: 15%;
+}
+
+.content-img {
+  width: 1000px;
+  max-width: 100%;
+}
