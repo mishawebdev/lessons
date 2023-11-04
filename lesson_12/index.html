@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Lesson 12 CSS Positioning</title>
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <header class="header header--fix">
+      <div class="header__container">
+        <ul class="menu">
+          <li class="menu__item">
+            <a href="#" class="menu__link">Home</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Blog</a>
+
+            <!-- sub menu / 2 level-->
+            <ul class="sub-menu">
+              <li class="sub-menu__item">
+                <a href="#" class="sub-menu__link">Sub Level 2 Item #1</a>
+              </li>
+              <li class="sub-menu__item">
+                <a href="#" class="sub-menu__link">Sub Level 2 Item #2</a>
+              </li>
+              <li class="sub-menu__item">
+                <a href="#" class="sub-menu__link">Sub Level 2 Item #3</a>
+
+                <!-- sub menu / level 3 -->
+                <ul class="sub-sub-menu">
+                  <li class="sub-sub-menu__item">
+                    <a href="#" class="sub-sub-menu__link">Sub level 3 Item #1</a>
+                  </li>
+                  <li class="sub-sub-menu__item">
+                    <a href="#" class="sub-sub-menu__link">Sub level 3 Item #2</a>
+                  </li>
+                  <li class="sub-sub-menu__item">
+                    <a href="#" class="sub-sub-menu__link">Sub level 3 Item #3</a>
+                  </li>
+                  <li class="sub-sub-menu__item">
+                    <a href="#" class="sub-sub-menu__link">Sub level 3 Item #4</a>
+                  </li>
+                  <li class="sub-sub-menu__item">
+                    <a href="#" class="sub-sub-menu__link">Sub level 3 Item #5</a>
+                  </li>
+                </ul>
+
+              </li>
+              <li class="sub-menu__item">
+                <a href="#" class="sub-menu__link">Sub Level 2 Item #4</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">About us</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Contacts</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- experts gallery -->
+    <main class="page">
+      <div class="page__container">
+        <div class="row">
+
+        <div class="image page__card">
+          <img src="img/photo-1.jpg" alt="team member">
+
+          <div class="image__socials">
+            <a class="image__link" href="#">
+              <img src="img/icon-instagram.svg" alt="social icon">
+            </a>
+            <a class="image__link" href="#">
+              <img src="img/icon-fb.svg" alt="social icon">
+            </a>
+            <a class="image__link" href="@">
+              <img src="img/icon-twiter.svg" alt="social icon">
+            </a>
+          </div>
+
+          <div class="image__badge">
+            <h4 class="image__name">Nattasha Kelvin</h4>
+            <div class="image__position">Managing Director</div>
+          </div>
+        </div>
+
+        <div class="image page__card">
+          <img src="img/photo-2.jpg" alt="team member">
+
+          <div class="image__socials">
+            <a class="image__link" href="#">
+              <img src="img/icon-instagram.svg" alt="social icon">
+            </a>
+            <a class="image__link" href="#">
+              <img src="img/icon-fb.svg" alt="social icon">
+            </a>
+            <a class="image__link" href="@">
+              <img src="img/icon-twiter.svg" alt="social icon">
+            </a>
+          </div>
+
+          <div class="image__badge">
+            <h4 class="image__name">David	Simpson</h4>
+            <div class="image__position">Designer</div>
+          </div>
+        </div>
+
+        <div class="image page__card">
+          <img src="img/photo-3.jpg" alt="team member">
+
+          <div class="image__socials">
+            <a class="image__link" href="#">
+              <img src="img/icon-instagram.svg" alt="social icon">
+            </a>
+            <a class="image__link" href="#">
+              <img src="img/icon-fb.svg" alt="social icon">
+            </a>
+            <a class="image__link" href="@">
+              <img src="img/icon-twiter.svg" alt="social icon">
+            </a>
+          </div>
+
+          <div class="image__badge">
+            <h4 class="image__name">Madeleine	Grant</h4>
+            <div class="image__position">Marketing Specialist</div>
+          </div>
+        </div>
+        </div>
+
+        <div class="row">
+
+          <div class="image page__card">
+            <img src="img/photo-4.jpg" alt="team member">
+  
+            <div class="image__socials">
+              <a class="image__link" href="#">
+                <img src="img/icon-instagram.svg" alt="social icon">
+              </a>
+              <a class="image__link" href="#">
+                <img src="img/icon-fb.svg" alt="social icon">
+              </a>
+              <a class="image__link" href="@">
+                <img src="img/icon-twiter.svg" alt="social icon">
+              </a>
+            </div>
+  
+            <div class="image__badge">
+              <h4 class="image__name">Jonathan	Coleman</h4>
+              <div class="image__position">Managing Director</div>
+            </div>
+          </div>
+  
+          <div class="image page__card">
+            <img src="img/photo-5.jpg" alt="team member">
+  
+            <div class="image__socials">
+              <a class="image__link" href="#">
+                <img src="img/icon-instagram.svg" alt="social icon">
+              </a>
+              <a class="image__link" href="#">
+                <img src="img/icon-fb.svg" alt="social icon">
+              </a>
+              <a class="image__link" href="@">
+                <img src="img/icon-twiter.svg" alt="social icon">
+              </a>
+            </div>
+  
+            <div class="image__badge">
+              <h4 class="image__name">Wanda	Forsyth</h4>
+              <div class="image__position">Designer</div>
+            </div>
+          </div>
+  
+          <div class="image page__card">
+            <img src="img/photo-6.jpg" alt="team member">
+  
+            <div class="image__socials">
+              <a class="image__link" href="#">
+                <img src="img/icon-instagram.svg" alt="social icon">
+              </a>
+              <a class="image__link" href="#">
+                <img src="img/icon-fb.svg" alt="social icon">
+              </a>
+              <a class="image__link" href="@">
+                <img src="img/icon-twiter.svg" alt="social icon">
+              </a>
+            </div>
+  
+            <div class="image__badge">
+              <h4 class="image__name">Austin	Randall</h4>
+              <div class="image__position">Marketing Specialist</div>
+            </div>
+          </div>
+          </div>
+
+          <!-- sticky -->
+          <div class="page__sticky sticky">
+            <h4 class="sticky__header">
+              Lorem ipsum dolor sit
+            </h4>
+            <div class="sticky__text">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam doloremque sunt, magni dolore commodi nulla numquam dicta, non quasi, maiores fugiat modi similique. Reprehenderit expedita numquam blanditiis dicta velit doloremque autem. Accusamus nemo molestias eaque error provident exercitationem libero dignissimos nam maiores ipsa, magnam pariatur dolorum nobis numquam modi sint quia itaque ullam totam voluptates velit doloremque consequatur qui. Necessitatibus cumque vel doloribus quos? Quaerat quam reiciendis recusandae nihil dolor sit, tempora voluptas placeat reprehenderit eos fuga exercitationem cupiditate ratione alias consequuntur. Expedita modi architecto, inventore nulla tempora cumque magnam optio quisquam fugiat ipsum debitis officiis 
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam doloremque sunt, magni dolore commodi nulla numquam dicta, non quasi, maiores fugiat modi similique. Reprehenderit expedita numquam blanditiis dicta velit doloremque autem. Accusamus nemo molestias eaque error provident exercitationem libero dignissimos nam maiores ipsa, magnam pariatur dolorum nobis numquam modi sint quia itaque ullam totam voluptates velit doloremque consequatur qui. Necessitatibus cumque vel doloribus quos? Quaerat quam reiciendis recusandae nihil dolor sit, tempora voluptas placeat reprehenderit eos fuga exercitationem cupiditate ratione alias consequuntur. Expedita modi architecto, inventore nulla tempora cumque magnam optio quisquam fugiat ipsum debitis officiis 
+              </p>
+              <h4 class="sticky__header">
+                Lorem ipsum dolor sit amet 
+              </h4>
+              <p>
+                libero perferendis possimus corporis? Iure praesentium dicta similique. Recusandae nisi possimus enim laborum earum accusamus ut non quisquam culpa saepe laudantium inventore, impedit tempora! Ad facere illum dicta cumque itaque ut deleniti labore magni quibusdam dignissimos! Voluptas necessitatibus incidunt officia. Reprehenderit ducimus velit neque vero, eum est, nesciunt inventore, repellat earum eius dolore rem quos accusamus blanditiis?
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam doloremque sunt, magni dolore commodi nulla numquam dicta, non quasi, maiores fugiat modi similique. Reprehenderit expedita numquam blanditiis dicta velit doloremque autem. Accusamus nemo molestias eaque error provident exercitationem libero dignissimos nam maiores ipsa, magnam pariatur dolorum nobis numquam modi sint quia itaque ullam totam voluptates velit doloremque  
+              </p>
+              <h4 class="sticky__header">
+                Lorem ipsum dolor sit amet
+              </h4>
+              <p>
+                obcaecati aut, fuga maiores delectus amet adipisci iure illo doloribus molestiae omnis ullam! Quibusdam eos dolorem officiis nam quam omnis. Accusantium, rem eum libero perferendis possimus corporis? Iure praesentium dicta similique. Recusandae nisi possimus enim laborum earum accusamus ut non quisquam culpa saepe laudantium inventore, impedit tempora! Ad facere illum dicta cumque itaque ut deleniti labore magni quibusdam dignissimos! Voluptas necessitatibus incidunt officia. Reprehenderit ducimus velit neque vero, eum est, nesciunt inventore, repellat earum eius dolore rem quos accusamus blanditiis?
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem expedita, nostrum eaque repellendus beatae eius laborum asperiores culpa deserunt quisquam veritatis! Voluptates, reprehenderit laborum impedit nisi consequatur obcaecati nesciunt culpa ad architecto, dicta numquam facilis voluptatibus. Eligendi fugiat dolorum saepe animi itaque aperiam alias excepturi. Asperiores sit dolores, voluptatibus ipsa vel quia suscipit voluptate earum at minus reprehenderit ad labore quod quaerat, enim recusandae esse excepturi repudiandae, illum minima blanditiis unde accusamus cum delectus! Minus repellendus iste quia nobis sint saepe, amet maxime tenetur aliquid, in veniam consequatur omnis quod odio excepturi. Dolorum veritatis tempora deserunt officia quidem corrupti pariatur atque nam provident veniam dolorem optio qui explicabo perferendis quia quas, voluptatum rem sint saepe cumque dolores ex sapiente nisi? Et earum, pariatur laudantium dolor optio laborum magni doloribus modi adipisci repudiandae officia nisi rem sunt, cum natus obcaecati maxime itaque facere quo. Eos illum, quod eaque quis, dignissimos maiores nemo, voluptates tempore dolorum similique quasi commodi consectetur atque vel nostrum cum! Nihil accusantium molestiae distinctio nulla earum possimus veritatis expedita hic aspernatur vero. Fuga suscipit exercitationem, recusandae sapiente porro totam nisi laudantium vero, placeat ipsa repellendus minus, aspernatur dolorum. Est nostrum eos culpa ad voluptatibus ullam illo sequi aut porro alias, vel omnis earum quo.
+                Nihil accusantium molestiae distinctio nulla earum possimus veritatis expedita hic aspernatur vero. Fuga suscipit exercitationem, recusandae sapiente porro totam nisi laudantium vero, placeat ipsa repellendus minus, aspernatur dolorum. Est nostrum eos culpa ad voluptatibus ullam illo sequi aut porro alias, vel omnis earum quo.
+                quas, voluptatum rem sint saepe cumque dolores ex sapiente nisi? Et earum, pariatur laudantium dolor optio laborum magni doloribus modi adipisci repudiandae officia nisi rem sunt, cum natus obcaecati maxime itaque facere quo. Eos illum, quod eaque quis, dignissimos maiores nemo, voluptates tempore dolorum similique quasi commodi consectetur atque vel nostrum cum! Nihil accusantium molestiae distinctio nulla earum possimus veritatis expedita hic aspernatur vero. Fuga suscipit exercitationem, recusandae sapiente porro totam nisi laudantium vero, placeat ipsa repellendus minus, aspernatur dolorum. Est nostrum eos culpa ad voluptatibus ullam illo sequi aut porro alias, vel omnis earum quo.
+                Nihil accusantium molestiae distinctio nulla earum possimus veritatis expedita hic aspernatur vero. Fuga suscipit exercitationem, recusandae sapiente porro totam nisi laudantium vero, placeat ipsa repellendus minus, aspernatur dolorum. Est nostrum eos culpa ad voluptatibus ullam illo sequi aut porro alias, vel omnis earum quo.
+              </p>
+              <p>
+                obcaecati aut, fuga maiores delectus amet adipisci iure illo doloribus molestiae omnis ullam! Quibusdam eos dolorem officiis nam quam omnis. Accusantium, rem eum libero perferendis possimus corporis? Iure praesentium dicta similique. Recusandae nisi possimus enim laborum earum accusamus ut non quisquam culpa saepe laudantium inventore, impedit tempora! Ad facere illum dicta cumque itaque ut deleniti labore magni quibusdam dignissimos! Voluptas necessitatibus incidunt officia. Reprehenderit ducimus velit neque vero, eum est, nesciunt inventore, repellat earum eius dolore rem quos accusamus blanditiis?
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem expedita, nostrum eaque repellendus beatae eius laborum asperiores culpa deserunt quisquam veritatis! Voluptates, reprehenderit laborum impedit nisi consequatur obcaecati nesciunt culpa ad architecto, dicta numquam facilis voluptatibus. Eligendi fugiat dolorum saepe animi itaque aperiam alias excepturi. Asperiores sit dolores, voluptatibus ipsa vel quia suscipit voluptate earum at minus reprehenderit ad labore quod quaerat, enim recusandae esse excepturi repudiandae, illum minima blanditiis unde accusamus cum delectus! Minus repellendus iste quia nobis sint saepe, amet maxime tenetur aliquid, in veniam consequatur omnis quod odio excepturi. Dolorum veritatis tempora deserunt officia quidem corrupti pariatur atque nam provident veniam dolorem optio qui explicabo perferendis quia quas, voluptatum rem sint saepe cumque dolores ex sapiente nisi? Et earum, pariatur laudantium dolor optio laborum magni doloribus modi adipisci repudiandae officia nisi rem sunt, cum natus obcaecati maxime itaque facere quo. Eos illum, quod eaque quis, dignissimos maiores nemo, voluptates tempore dolorum similique quasi commodi consectetur atque vel nostrum cum! Nihil accusantium molestiae distinctio nulla earum possimus veritatis expedita hic aspernatur vero. Fuga suscipit exercitationem, recusandae sapiente porro totam nisi laudantium vero, placeat ipsa repellendus minus, aspernatur dolorum. Est nostrum eos culpa ad voluptatibus ullam illo sequi aut porro alias, vel omnis earum quo.
+                Nihil accusantium molestiae distinctio nulla earum possimus veritatis expedita hic aspernatur vero. Fuga suscipit exercitationem, recusandae sapiente porro totam nisi laudantium vero, placeat ipsa repellendus minus, aspernatur dolorum. Est nostrum eos culpa ad voluptatibus ullam illo sequi aut porro alias, vel omnis earum quo.
+                quas, voluptatum rem sint saepe cumque dolores ex sapiente nisi? Et earum, pariatur laudantium dolor optio laborum magni doloribus modi adipisci repudiandae officia nisi rem sunt, cum natus obcaecati maxime itaque facere quo. Eos illum, quod eaque quis, dignissimos maiores nemo, voluptates tempore dolorum similique quasi commodi consectetur atque vel nostrum cum! Nihil accusantium molestiae distinctio nulla earum possimus veritatis expedita hic aspernatur vero. Fuga suscipit exercitationem, recusandae sapiente porro totam nisi laudantium vero, placeat ipsa repellendus minus, aspernatur dolorum. Est nostrum eos culpa ad voluptatibus ullam illo sequi aut porro alias, vel omnis earum quo.
+                Nihil accusantium molestiae distinctio nulla earum possimus veritatis expedita hic aspernatur vero. Fuga suscipit exercitationem, recusandae sapiente porro totam nisi laudantium vero, placeat ipsa repellendus minus, aspernatur dolorum. Est nostrum eos culpa ad voluptatibus ullam illo sequi aut porro alias, vel omnis earum quo.
+              </p>
+            </div>
+          </div>
+      </div>
+    </main>
+    
+    <footer class="footer">
+      <div class="footer__container">
+        <p>Homework 12 CSS Position | 4thNovember 2023</p>
+      </div>
+    </footer>
+
+  </div>
+</body>
+
+</html>

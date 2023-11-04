@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:600&display=swap");
+
+@import url("reset.css");
+
+.wrapper {
+  overflow: clip;
+}
+
+[class*="__container"] {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header {
+  font-family: "Inter", sans-serif;
+  font-size: 28px;
+  background-color: #1bafb9;
+  padding: 25px;
+}
+
+.header--fix {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+
+/* menu */
+.menu {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.menu__item {
+  display: inline-block;
+  position: relative;
+  margin-right: 45px;
+}
+
+.menu__link {
+  background-color: rgb(13, 134, 233);
+  color: white;
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+.menu__item:hover .menu__link {
+  background-color: rgb(6, 15, 148);
+  box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+  border-radius: 10px;
+  outline: 2px solid white;
+}
+
+/* >>> !!! to show sub-menu <<< !!! */
+.menu__item:hover .sub-menu {
+  visibility: visible;
+}
+
+/* sub-menu - 2 level */
+.sub-menu {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  padding-top: 2px;
+  color: #000;
+  width: 350px;
+  visibility: hidden;
+  color: honeydew;
+  background-color: rgb(48, 91, 172);
+  border-radius: 10px;
+}
+
+.sub-menu__item {
+  position: relative;
+}
+
+.sub-menu__link {
+  display: inline-block;
+  padding: 10px;
+  width: 100%;
+}
+
+.sub-menu__item:hover .sub-menu__link {
+  text-decoration: underline;
+  background-color: rgb(66, 173, 138);
+  border-radius: 10px;
+}
+
+.sub-menu__item:hover .sub-sub-menu {
+  visibility: visible;
+  border-radius: 10px;
+}
+
+/* sub menu - level 3 */
+.sub-sub-menu {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  width: 350px;
+  border-radius: 10px;
+  background-color: #1bafb9;
+  visibility: hidden;
+}
+
+.sub-sub-menu__item {
+  font-size: 26px;
+}
+
+.sub-sub-menu__link {
+  display: inline-block;
+  padding: 10px;
+  width: 100%;
+}
+
+.sub-sub-menu__link:hover {
+  text-decoration: underline;
+  background-color: blue;
+  border-radius: 10px;
+}
+
+/* experts gallery */
+/* .page {
+} */
+
+.page__container {
+  padding-top: 50px;
+}
+
+.row {
+  font-size: 0;
+}
+
+.row:not(:last-child) {
+  margin-bottom: 31px;
+}
+
+.image {
+  position: relative;
+  display: inline-block;
+}
+
+.page__card:not(:last-child) {
+  margin-right: 31px;
+}
+
+.image::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	background-color: #6B77E5;
+}
+.image:hover::before {
+	opacity: 0.5;
+}
+
+.image__socials {
+  position: absolute;
+  top: 241px;
+  left: 107px;
+
+  visibility: hidden;
+}
+
+.image:hover .image__socials {
+  visibility: visible;
+}
+
+.image__link{
+  display: inline-block;
+  background-color: #40ddb6;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.image__link:hover{
+  background-color: #6b77e5;
+}
+
+.image__link:not(:last-child) {
+  margin-right: 14px;
+}
+
+.image__link img {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 10px;
+  left: 12px;
+}
+
+.image__badge {
+  max-width: 341px;
+  width: 100%;
+  position: absolute;
+  bottom: 22px;
+  left: 22px;
+  background-color: #ffffff;
+  padding: 25px 25px 25px 29px;
+  text-align: center;
+}
+
+.image__name {
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  line-height: 1.52;
+  color: #37393f;
+  margin-bottom: 4px;
+}
+
+.image__position {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  color: #7d7d7d;
+  line-height: 1.35;
+}
+
+/* sticky */
+.sticky {
+  padding-top: 50px;
+}
+.sticky__header {
+  font-family: "Inter", sans-serif;
+  font-size: 28px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  background-color: transparent;
+  padding: 20px 10px;
+  color: #0cb460;
+  position: sticky;
+  top: 100px;
+  width: 50%;
+  outline: 2px dashed #99740d;
+  border-radius: 10px;
+}
+
+.sticky__header:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.sticky__text {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.sticky__text p:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+.footer__container {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  padding: 10px 0;
+}
