@@ -288,9 +288,10 @@
   height: 119px;
   position: absolute;
   outline: 2px solid #000;
+  background-color: #990066;
   top: 15px;
   left: 170px;
-  border-top-right-radius: 347px 0;
+  z-index: 5;
 }
 
 .car__door::before {
@@ -299,32 +300,35 @@
   width: 155px;
   height: 84px;
   position: absolute;
-  background-color: rgba(94, 153, 212, 0.557);
+  background-color: rgba(94, 153, 212, 1);
   top: -87px;
   left: -3px;
   border-top-right-radius: 177px 117px;
   border-bottom-right-radius: 17px 17px;
-
-  animation: door-glass 1s linear 3s forwards;
-
+  z-index: -2;
+  animation: door-glass 1s linear 8s forwards;
 }
 
 @keyframes door-glass {
   0% {
     transform: translateY(0);
   }
+  
+  50% {
+    transform: translateY(80px);
+  }
 
   100% {
-    transform: translateY(80px);
+    transform: translateY(100%);
   }
 }
 
-
-
-.car__door:hover::before {
-  background-image: url("../img/mem.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
+.car__driver img{
+  position: absolute;
+  top: -89px;
+  left: 7px;
+  max-width: 85px;
+  z-index: -3;
 }
 
 .car__door::after {
@@ -368,8 +372,20 @@
   position: absolute;
   top: 105px;
   right: 60px;
-  border: 10px solid grey;
+  border: 10px dashed grey;
   outline: 30px solid #000;
+
+  animation: wheel-front 2s infinite linear 3s;
+}
+
+@keyframes wheel-front {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(359deg);
+  }
 }
 
 .car__wheel-back {
@@ -380,6 +396,18 @@
   position: absolute;
   top: 105px;
   left: 60px;
-  border: 10px solid grey;
+  border: 10px dashed grey;
   outline: 30px solid #000;
+
+  animation: wheel-front 2s infinite linear 3s;
+}
+
+@keyframes wheel-back {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(359deg);
+  }
 }
