@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Lesson 15 CSS Flexbox</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container">
+
+        <div class="header__logo">
+          <img src="images/logo.svg" alt="logo">
+        </div>
+
+        <div class="header__forms">
+          <div class="header__search">
+            Search
+          </div>
+
+          <div class="header__select-btn">
+            English (United States)
+          </div>
+        </div>
+
+        <div class="header__action">
+          <a class="header__link header__link--login" href="#">Login</a>
+
+          <a class="header__link header__link--signup" href="#">Sign Up</a>
+        </div>
+
+      </div>
+    </header>
+
+    <main class="page">
+      <div class="page__container">
+
+        <h1 class="title">Categories For Men</h1>
+
+        <div class="products">
+
+          <div class="products__column">
+            <div class="products__item item-product">
+
+              <a class="item-product__image" href="#">
+                <img src="images/photo_01.jpg" alt="Image">
+              </a>
+              <div class="item-product__body">
+
+                <div class="item-product__content">
+
+                  <h4 class="item-product__title">
+                    <a href="#" class="item-product__link-title">Shirts</a>
+                  </h4>
+
+                  <div class="item-product__text">
+                    Explore Now!
+                  </div>
+                </div>
+                <a href="#" class="item-product__link"></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="products__column">
+            <div class="products__item item-product">
+              <a class="item-product__image" href="#">
+                <img src="images/photo_02.jpg" alt="Image">
+              </a>
+              <div class="item-product__body">
+                <div class="item-product__content">
+                  <h4 class="item-product__title">
+                    <a href="#" class="item-product__link-title">Printed T-Shirts</a>
+                  </h4>
+                  <div class="item-product__text">
+                    Explore Now!
+                  </div>
+                </div>
+                <a href="#" class="item-product__link"></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="products__column">
+            <div class="products__item item-product">
+              <a class="item-product__image" href="#">
+                <img src="images/photo_03.jpg" alt="Image">
+              </a>
+              <div class="item-product__body">
+                <div class="item-product__content">
+                  <h4 class="item-product__title">
+                    <a href="#" class="item-product__link-title">Plain T-Shirt</a>
+                  </h4>
+                  <div class="item-product__text">
+                    Explore Now!
+                  </div>
+                </div>
+                <a href="#" class="item-product__link"></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="products__column">
+            <div class="products__item item-product">
+              <a class="item-product__image" href="#">
+                <img src="images/photo_04.jpg" alt="Image">
+              </a>
+              <div class="item-product__body">
+                <div class="item-product__content">
+                  <h4 class="item-product__title">
+                    <a href="#" class="item-product__link-title">Polo T-Shirt</a>
+                  </h4>
+                  <div class="item-product__text">
+                    Explore Now!
+                  </div>
+                </div>
+                <a href="#" class="item-product__link"></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="products__column">
+            <div class="products__item item-product">
+              <a class="item-product__image" href="#">
+                <img src="images/photo_05.jpg" alt="Image">
+              </a>
+              <div class="item-product__body">
+                <div class="item-product__content">
+                  <h4 class="item-product__title">
+                    <a href="#" class="item-product__link-title">Hoodies & Sweetshirt</a>
+                  </h4>
+                  <div class="item-product__text">
+                    Explore Now!
+                  </div>
+                </div>
+                <a href="#" class="item-product__link"></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="products__column">
+            <div class="products__item item-product">
+              <a class="item-product__image" href="#">
+                <img src="images/photo_06.jpg" alt="Image">
+              </a>
+              <div class="item-product__body">
+                <div class="item-product__content">
+                  <h4 class="item-product__title">
+                    <a href="#" class="item-product__link-title">Jeans</a>
+                  </h4>
+                  <div class="item-product__text">
+                    Explore Now!
+                  </div>
+                </div>
+                <a href="#" class="item-product__link"></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="products__column">
+            <div class="products__item item-product">
+              <a class="item-product__image" href="#">
+                <img src="images/photo_07.jpg" alt="Image">
+              </a>
+              <div class="item-product__body">
+                <div class="item-product__content">
+                  <h4 class="item-product__title">
+                    <a href="#" class="item-product__link-title">Activewear</a>
+                  </h4>
+                  <div class="item-product__text">
+                    Explore Now!
+                  </div>
+                </div>
+                <a href="#" class="item-product__link"></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="products__column">
+            <div class="products__item item-product">
+              <a class="item-product__image" href="#">
+                <img src="images/photo_08.jpg" alt="Image">
+              </a>
+              <div class="item-product__body">
+                <div class="item-product__content">
+                  <h4 class="item-product__title">
+                    <a href="#" class="item-product__link-title">Boxers</a>
+                  </h4>
+                  <div class="item-product__text">
+                    Explore Now!
+                  </div>
+                </div>
+                <a href="#" class="item-product__link"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Wishlist -->
+        <div class="wishlist">
+          <div class="wishlist__container">
+            <h2 class="subtitle">Wishlist</h2>
+
+            <div class="wishlist__item item-wishlist">
+              <!-- images block -->
+              <div class="item-wishlist__images">
+                <div class="item-wishlist__remove">
+                  <img src="images/wishlist/icon-remove.svg" alt="icon remove">
+                </div>
+                <a class="item-wishlist__image" href="#">
+                  <img src="images/wishlist/photo-01.jpg" alt="image">
+                </a>
+                <!-- central block -->
+                <div class="item-wishlist__content">
+                  <h4 class="item-wishlist__header">
+                    Blue Flower Print Crop Top
+                  </h4>
+                  <div class="item-wishlist__color"><span>Color</span> : Yellow</div>
+                  <div class="item-wishlist__quantity"><span>Quantity</span> : 1</div>
+                </div>
+              </div>
+              <!-- price block -->
+              <div class="item-wishlist__buy">
+                <div class="item-wishlist__price">$29.00</div>
+                <a href="#" class="item-wishlist__add">Add to cart</a>
+              </div>
+            </div>
+
+            <div class="wishlist__item item-wishlist">
+              <!-- images block -->
+              <div class="item-wishlist__images">
+                <div class="item-wishlist__remove">
+                  <img src="images/wishlist/icon-remove.svg" alt="icon remove">
+                </div>
+                <a class="item-wishlist__image" href="#">
+                  <img src="images/wishlist/photo-02.jpg" alt="image">
+                </a>
+                <!-- central block -->
+                <div class="item-wishlist__content">
+                  <h4 class="item-wishlist__header">
+                    Yellow Flower Print Dress
+                  </h4>
+                  <div class="item-wishlist__color"><span>Color</span> : Yellow</div>
+                  <div class="item-wishlist__quantity"><span>Quantity</span> : 1</div>
+                </div>
+              </div>
+              <!-- price block -->
+              <div class="item-wishlist__buy">
+                <div class="item-wishlist__price">$78.00</div>
+                <a href="#" class="item-wishlist__add">Add to cart</a>
+              </div>
+            </div>
+
+            <div class="wishlist__item item-wishlist">
+              <!-- images block -->
+              <div class="item-wishlist__images">
+                <div class="item-wishlist__remove">
+                  <img src="images/wishlist/icon-remove.svg" alt="icon remove">
+                </div>
+                <a class="item-wishlist__image" href="#">
+                  <img src="images/wishlist/photo-03.jpg" alt="image">
+                </a>
+                <!-- central block -->
+                <div class="item-wishlist__content">
+                  <h4 class="item-wishlist__header">
+                    White Hoodie long sleeve
+                  </h4>
+                  <div class="item-wishlist__color"><span>Color</span> : White</div>
+                  <div class="item-wishlist__quantity"><span>Quantity</span> : 1</div>
+                </div>
+              </div>
+              <!-- price block -->
+              <div class="item-wishlist__buy">
+                <div class="item-wishlist__price">$134.00</div>
+                <a href="#" class="item-wishlist__add">Add to cart</a>
+              </div>
+            </div>
+
+            <div class="wishlist__item item-wishlist">
+              <!-- images block -->
+              <div class="item-wishlist__images">
+                <div class="item-wishlist__remove">
+                  <img src="images/wishlist/icon-remove.svg" alt="icon remove">
+                </div>
+                <a class="item-wishlist__image" href="#">
+                  <img src="images/wishlist/photo-04.jpg" alt="image">
+                </a>
+                <!-- central block -->
+                <div class="item-wishlist__content">
+                  <h4 class="item-wishlist__header">
+                    Brown men’s long sleeve T-shirt
+                  </h4>
+                  <div class="item-wishlist__color"><span>Color</span> : Brown</div>
+                  <div class="item-wishlist__quantity"><span>Quantity</span> : 1</div>
+                </div>
+              </div>
+              <!-- price block -->
+              <div class="item-wishlist__buy">
+                <div class="item-wishlist__price">$93.00</div>
+                <a href="#" class="item-wishlist__add">Add to cart</a>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+        <!-- Orders -->
+        <div class="orders">
+          <div class="orders__container">
+            <h2 class="subtitle">My Orders</h2>
+
+            <div class="orders__item item-order">
+              <div class="item-order__info-wrap">
+
+                <div class="item-order__number">
+                  Order no: #123456789
+                </div>
+
+                <div class="item-order__wrap">
+
+                  <div class="item-order__info">
+                    <div class="item-order__date">
+                      Order Date : 2 June 2023 2:40 PM
+                    </div>
+
+                    <div class="item-order__delivery">
+                      Estimated Delivery Date : 8 June 2023
+                    </div>
+                  </div>
+
+                  <div class="item-order__status-wrap">
+                    <div class="item-order__delivery-status">
+                      Order Status : Inprogress
+                    </div>
+                    <div class="item-order__payment">
+                      Payment Method : Cash on delivery
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- white block -->
+              <div class="item-order__details-wrap">
+                <div class="item-order__detail">
+                  <a href="" class="item-order__image">
+                    <img src="images/orders/photo-01.jpg" alt="order image">
+                  </a>
+
+                  <div class="item-order__summary">
+                    <h6 class="item-order__title">Black Printed T-shirt</h6>
+                    <div class="item-order__color">Colour : Pink</div>
+                    <div class="item-order__quantity">Qty : 1</div>
+                    <div class="item-order__total">Total : $23.00</div>
+                  </div>
+                </div>
+
+                <a class="item-order__link" href="#">View Detail</a>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </main>
+
+
+    <footer class="footer"></footer>
+  </div>
+</body>
+
+</html>
