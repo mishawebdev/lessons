@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Lesson 16 HTML Forms</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header"></header>
+
+    <main class="page">
+
+      <div class="address">
+        <div class="address__container">
+          <h1 class="address__title">My Info</h1>
+          <h2 class="address__sub-title">Add Address</h2>
+          <form class="address__form" action="#" enctype="multipart/form-data">
+
+            <div class="address__input-wrap">
+              <label class="address__label" for="fname">First Name*</label>
+              <input class="address__input" id="fname" type="text" placeholder="First Name">
+            </div>
+
+            <div class="address__input-wrap">
+              <label class="address__label" for="lname">Last Name*</label>
+              <input class="address__input" id="lname" type="text" placeholder="Last Name">
+            </div>
+
+            <div class="address__input-wrap">
+              <label class="address__label" for="country">Country / Region*</label>
+              <input class="address__input" id="country" type="text" placeholder="Country / Region">
+            </div>
+
+            <div class="address__input-wrap">
+              <label class="address__label" for="company">Company Name</label>
+              <input class="address__input" id="company" type="text" placeholder="Company (optional)">
+            </div>
+
+            <div class="address__input-wrap">
+              <label class="address__label" for="address">Street Address*</label>
+              <input class="address__input" id="address" type="text" placeholder="House number and street name">
+            </div>
+
+            <div class="address__input-wrap">
+              <label class="address__label" for="apartment">Apt, suite, unit</label>
+              <input class="address__input" id="apartment" type="text" placeholder="apartment, suite, unit, etc. (optional)">
+            </div>
+
+            <div class="address__input-wrap">
+              <label class="address__label" for="city">City*</label>
+              <input class="address__input" id="city" type="text" placeholder="Town / City">
+            </div>
+
+            <div class="address__input-wrap">
+              <label class="address__label" for="state">State*</label>
+              <select class="address__input" name="state" id="state">
+                <option class="address__option" value="State">State</option>
+                <option class="address__option" value="State">Ukraine</option>
+                <option class="address__option" value="State">United Kingdom</option>
+                <option class="address__option" value="State">USA</option>
+              </select>
+            </div>
+
+            <div class="address__input-wrap">
+              <label class="address__label" for="phone">Phone*</label>
+              <input class="address__input" id="phone" type="tel" placeholder="Phone">
+            </div>
+
+            <div class="address__input-wrap">
+              <label class="address__label" for="zip-code">Postal Code*</label>
+              <input class="address__input" id="zip-code" type="text" placeholder="Postal Code">
+            </div>
+
+
+            <!-- textarea -->
+            <div class="address__textarea-wrap">
+              <label class="address__label" for="text">Delivery Instruction</label>
+              <textarea class="address__textarea" name="text" id="text" cols="30" rows="10"
+                placeholder="Delivery Instruction"></textarea>
+            </div>
+
+            <!-- check boxes -->
+            <div class="address__checkbox-wrap checkbox">
+
+              <div class="checkbox__shipping">
+                <input class="address__checkbox checkbox__input" type="checkbox" checked name="ship" id="ship">
+                <label class="checkbox__label" for="ship">Set as default shipping address</label>
+              </div>
+
+              <div class="checkbox__billing">
+                <input class="address__checkbox checkbox__input" type="checkbox" name="ship" id="bill">
+                <label class="checkbox__label" for="bill">Set as default billing address</label>
+              </div>
+
+            </div>
+
+            <!-- buttons -->
+            <div class="btn-wrap">
+              <button class="address__btn" type="submit">Save</button>
+              <button class="address__btn" type="reset">Cancel</button>
+            </div>
+
+          </form>
+
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer"></footer>
+  </div>
+</body>
+
+</html>
