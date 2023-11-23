@@ -39,6 +39,8 @@ body {
   background-color: #77608d;
   padding: 15px;
   text-align: center;
+
+  
 }
 
 .footer {
@@ -48,11 +50,26 @@ body {
 }
 
 /* main styles */
+
+.nav {
+  display: flex;
+  max-width: 800px;
+  margin: 0 auto;
+  gap: 50px;
+  color: #fff;
+  padding: 20px;
+  font-family: "Core Sans C", sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+}
+
 .address__container {
   max-width: 925px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .address__title {
@@ -65,7 +82,7 @@ body {
   margin-bottom: 20px;
 }
 
-.address__sub-title {
+.address__sub-title{
   color: #3c4242;
   font-family: "Core Sans C", sans-serif;
   font-size: 22px;
@@ -75,16 +92,15 @@ body {
   margin-bottom: 50px;
 }
 
-.address__form {
+/* form */
+.form__body {
   display: flex;
   justify-content: space-between;
   row-gap: 28px;
   column-gap: 42px;
   flex-wrap: wrap;
-}
 
-.address__textarea {
-  row-gap: 0;
+  margin-bottom: 30px;
 }
 
 .address__input-wrap {
@@ -124,10 +140,6 @@ body {
 }
 
 .address__textarea-wrap {
-  flex-grow: 0;
-  flex-shrink: 0;
-  flex-basis: 100%;
-
   margin-bottom: 30px;
 }
 
@@ -141,7 +153,9 @@ body {
 }
 
 
-.address__checkbox-wrap {}
+.address__checkbox-wrap {
+  margin-bottom: 50px;
+}
 
 .checkbox {}
 
@@ -156,8 +170,6 @@ body {
 .checkbox__billing:not(:last-child) {
   margin-bottom: 12px;
 }
-
-
 
 .checkbox__input {
   position: absolute;
@@ -196,11 +208,13 @@ body {
   width: 20px;
   height: 20px;
   border: 2px solid #bebcbd;
-  border-radius: 4px;
+  border-radius: 2px;
   flex: 0 0 20px;
 }
 
 .btn-wrap {
+  display: flex;
+  gap: 30px;
 }
 
 .checkbox__billing {}
@@ -213,6 +227,4 @@ body {
   color: #fff;
   background-color: #8a33fd;
   border-radius: 8px;
-
-  flex: 0 0 auto;
 }

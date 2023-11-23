@@ -10,7 +10,13 @@
 
 <body>
   <div class="wrapper">
-    <header class="header"></header>
+    <header class="header">
+      <ul class="nav">
+        <a href="#"><li class="nav__item">Home</li></a>
+        <a href="chekout_form.html" target="_blank"><li class="nav__item">Checkout Form</li></a>
+        <a href="call_back_form.html" target="_blank"><li class="nav__item">Request a Call Back Form</li></a>
+      </ul>
+    </header>
 
     <main class="page">
 
@@ -18,64 +24,66 @@
         <div class="address__container">
           <h1 class="address__title">My Info</h1>
           <h2 class="address__sub-title">Add Address</h2>
-          <form class="address__form" action="#" enctype="multipart/form-data">
 
-            <div class="address__input-wrap">
-              <label class="address__label" for="fname">First Name*</label>
-              <input class="address__input" id="fname" type="text" placeholder="First Name">
+          <form class="address__form form" action="#" enctype="multipart/form-data">
+            <div class="form__body">
+              <div class="address__input-wrap">
+                <label class="address__label" for="fname">First Name*</label>
+                <input class="address__input" id="fname" type="text" placeholder="First Name">
+              </div>
+
+              <div class="address__input-wrap">
+                <label class="address__label" for="lname">Last Name*</label>
+                <input class="address__input" id="lname" type="text" placeholder="Last Name">
+              </div>
+
+              <div class="address__input-wrap">
+                <label class="address__label" for="country">Country / Region*</label>
+                <input class="address__input" id="country" type="text" placeholder="Country / Region">
+              </div>
+
+              <div class="address__input-wrap">
+                <label class="address__label" for="company">Company Name</label>
+                <input class="address__input" id="company" type="text" placeholder="Company (optional)">
+              </div>
+
+              <div class="address__input-wrap">
+                <label class="address__label" for="address">Street Address*</label>
+                <input class="address__input" id="address" type="text" placeholder="House number and street name">
+              </div>
+
+              <div class="address__input-wrap">
+                <label class="address__label" for="apartment">Apt, suite, unit</label>
+                <input class="address__input" id="apartment" type="text"
+                  placeholder="apartment, suite, unit, etc. (optional)">
+              </div>
+
+              <div class="address__input-wrap">
+                <label class="address__label" for="city">City*</label>
+                <input class="address__input" id="city" type="text" placeholder="Town / City">
+              </div>
+
+              <div class="address__input-wrap">
+                <label class="address__label" for="state">State*</label>
+                <select class="address__input" name="state" id="state">
+                  <option class="address__option" value="State">State</option>
+                  <option class="address__option" value="State">Ukraine</option>
+                  <option class="address__option" value="State">United Kingdom</option>
+                  <option class="address__option" value="State">USA</option>
+                </select>
+              </div>
+
+              <div class="address__input-wrap">
+                <label class="address__label" for="phone">Phone*</label>
+                <input class="address__input" id="phone" type="tel" placeholder="Phone">
+              </div>
+
+              <div class="address__input-wrap">
+                <label class="address__label" for="zip-code">Postal Code*</label>
+                <input class="address__input" id="zip-code" type="text" placeholder="Postal Code">
+              </div>
+
             </div>
-
-            <div class="address__input-wrap">
-              <label class="address__label" for="lname">Last Name*</label>
-              <input class="address__input" id="lname" type="text" placeholder="Last Name">
-            </div>
-
-            <div class="address__input-wrap">
-              <label class="address__label" for="country">Country / Region*</label>
-              <input class="address__input" id="country" type="text" placeholder="Country / Region">
-            </div>
-
-            <div class="address__input-wrap">
-              <label class="address__label" for="company">Company Name</label>
-              <input class="address__input" id="company" type="text" placeholder="Company (optional)">
-            </div>
-
-            <div class="address__input-wrap">
-              <label class="address__label" for="address">Street Address*</label>
-              <input class="address__input" id="address" type="text" placeholder="House number and street name">
-            </div>
-
-            <div class="address__input-wrap">
-              <label class="address__label" for="apartment">Apt, suite, unit</label>
-              <input class="address__input" id="apartment" type="text" placeholder="apartment, suite, unit, etc. (optional)">
-            </div>
-
-            <div class="address__input-wrap">
-              <label class="address__label" for="city">City*</label>
-              <input class="address__input" id="city" type="text" placeholder="Town / City">
-            </div>
-
-            <div class="address__input-wrap">
-              <label class="address__label" for="state">State*</label>
-              <select class="address__input" name="state" id="state">
-                <option class="address__option" value="State">State</option>
-                <option class="address__option" value="State">Ukraine</option>
-                <option class="address__option" value="State">United Kingdom</option>
-                <option class="address__option" value="State">USA</option>
-              </select>
-            </div>
-
-            <div class="address__input-wrap">
-              <label class="address__label" for="phone">Phone*</label>
-              <input class="address__input" id="phone" type="tel" placeholder="Phone">
-            </div>
-
-            <div class="address__input-wrap">
-              <label class="address__label" for="zip-code">Postal Code*</label>
-              <input class="address__input" id="zip-code" type="text" placeholder="Postal Code">
-            </div>
-
-
             <!-- textarea -->
             <div class="address__textarea-wrap">
               <label class="address__label" for="text">Delivery Instruction</label>
@@ -108,6 +116,7 @@
 
         </div>
       </div>
+
     </main>
 
     <footer class="footer"></footer>
