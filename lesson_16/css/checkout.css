@@ -53,14 +53,23 @@ body {
 
 .nav {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   max-width: 800px;
   margin: 0 auto;
-  gap: 50px;
+  gap: 15px;
   color: #fff;
   padding: 20px;
+  
+}
+
+.nav__item {
   font-family: "Core Sans C", sans-serif;
-  font-size: 26px;
+  font-size: 23px;
   font-weight: 600;
+  border: 1px solid bisque;
+  padding: 5px 8px;
+  border-radius: 7px;
 }
 
 /* ========== Check Out ============ */
@@ -137,6 +146,7 @@ body {
   padding: 0 22px;
   border-radius: 8px;
   width: 100%;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
 }
 
 
@@ -156,6 +166,7 @@ body {
   flex-wrap: wrap;
 
   margin-bottom: 43px;
+  
 }
 
 .inputs__wrap {
@@ -181,6 +192,7 @@ body {
   padding: 0 22px;
   border-radius: 8px;
   width: 100%;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
 }
 
 .inputs__item::placeholder,
@@ -195,7 +207,8 @@ body {
 select {
   appearance: none;
   background: url("../img/icon-select.svg") no-repeat right;
-  background-position-x: calc(100% - 25px);
+  /* background-position-x: calc(100% - 25px); */
+  background-position: right 25px center;
 }
 
 .inputs__label {
@@ -331,6 +344,47 @@ select {
 .form-radio__item {
   display: flex;
   column-gap: 19px;
+
+  position: relative;
+}
+
+.form-radio__input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.form-radio__input:focus-visible + .form-radio__label {
+  outline: 1px solid green;
+}
+
+.form-radio__input:checked + .form-radio__label::before{
+  background-image: url("../img/icon-radio-button.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form-radio__label {
+  display: inline-flex;
+  gap: 19px;
+  cursor: pointer;
+}
+
+.form-radio__label::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  flex: 0 0 18px;
+
+  /* border: 1px solid #3c4242;
+  border-radius: 50%; */
+
+  background-image: url("../img/icon-radio-button-unchecked.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* Shipping Method  */
@@ -411,11 +465,14 @@ select {
 
 .payment__form {}
 
-.form-payment {
-  padding: 45px 48px 45px 28px;
+.payment__wrap {
   background-color: #f6f6f6;
   border-radius: 12px;
+  padding: 45px 48px 45px 28px;
+  margin-bottom: 50px;
 }
+
+.form-payment {}
 
 .payment__title {
   color: #3c4242;
@@ -439,10 +496,19 @@ select {
   margin-bottom: 30px;
 }
 
-.payment__cards {
+.payment__cards-wrap {
   display: flex;
   justify-content: flex-start;
-  column-gap: 20px;
+  gap: 20px;
+  flex-basis: 100%;
+}
+
+.payment__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding-left: 31px;
+  margin-bottom: 30px;
 }
 
 .payment__card {
@@ -457,4 +523,79 @@ select {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* card info inputs */
+.payment__card-info {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 28px;
+  padding-left: 31px;
+
+  border-bottom: 1px solid #bebcbd;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+}
+
+.payment__card-detail {
+  flex: 0 1 47%;
+  position: relative;
+}
+
+.payment__input {
+  width: 100%;
+  height: 52px;
+  background-color: transparent;
+  border: 1px solid #3c4242;
+  border-radius: 8px;
+  padding: 0 20px;
+
+  color: #807D7E;
+  font-family: "Causten", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.payment__security {
+  position: absolute;
+  background-image: url("../img/icon-security-eye.svg");
+  width: 20px;
+  height: 20px;
+  right: 20px;
+  top: 15px;
+}
+
+.payment__radio-item {
+  display: flex;
+  column-gap: 19px;
+  padding-top: 30px;
+  border-top: 1px solid #bebcbd;
+}
+
+.payment__radio-label {
+  color: #3c4242;
+  font-family: "Causten", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.pay-btn {
+  padding: 16px 20px;
+  color: #fff;
+  background-color: #8a33fd;
+  border-radius: 8px;
+
+  font-family: "Causten", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+
+  margin-bottom: 100px;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  box-shadow: rgb(78, 28, 196) 0px 0px 0px 3px;
 }

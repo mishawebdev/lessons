@@ -40,7 +40,7 @@ body {
   padding: 15px;
   text-align: center;
 
-  
+
 }
 
 .footer {
@@ -53,14 +53,23 @@ body {
 
 .nav {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   max-width: 800px;
   margin: 0 auto;
-  gap: 50px;
+  gap: 15px;
   color: #fff;
   padding: 20px;
+
+}
+
+.nav__item {
   font-family: "Core Sans C", sans-serif;
-  font-size: 26px;
+  font-size: 23px;
   font-weight: 600;
+  border: 1px solid bisque;
+  padding: 5px 8px;
+  border-radius: 7px;
 }
 
 .address__container {
@@ -82,7 +91,7 @@ body {
   margin-bottom: 20px;
 }
 
-.address__sub-title{
+.address__sub-title {
   color: #3c4242;
   font-family: "Core Sans C", sans-serif;
   font-size: 22px;
@@ -127,12 +136,14 @@ body {
   padding: 0 22px;
   border-radius: 8px;
   width: 100%;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
 }
 
 
 .address__input::placeholder,
 .address__textarea::placeholder,
-.address__option {
+.address__option,
+select {
   color: #807d7e;
   font-family: "Causten", sans-serif;
   font-size: 16px;
@@ -150,7 +161,16 @@ body {
   border-radius: 8px;
   resize: vertical;
   row-gap: 0;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
 }
+
+select {
+  appearance: none;
+  background: url("../img/icon-select.svg") no-repeat right;
+  /* background-position-x: calc(100% - 25px); */
+  background-position: right 25px center;
+}
+
 
 
 .address__checkbox-wrap {
@@ -227,4 +247,11 @@ body {
   color: #fff;
   background-color: #8a33fd;
   border-radius: 8px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  box-shadow: rgb(78, 28, 196) 0px 0px 0px 3px;
 }
