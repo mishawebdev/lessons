@@ -379,9 +379,6 @@ select {
   height: 18px;
   flex: 0 0 18px;
 
-  /* border: 1px solid #3c4242;
-  border-radius: 50%; */
-
   background-image: url("../img/icon-radio-button-unchecked.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -597,5 +594,5 @@ select {
 input:focus,
 select:focus {
   outline: none;
-  box-shadow: rgb(78, 28, 196) 0px 0px 0px 3px;
+  box-shadow: rgb(78, 28, 196) 0px 0px 0px 2px;
 }
