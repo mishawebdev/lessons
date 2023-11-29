@@ -55,7 +55,7 @@ body {
 
 /* popular container  */
 .popular__container {
-  max-width: 1358px;
+  max-width: 1197px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -64,6 +64,8 @@ body {
 
   outline: 1px solid orange;
 }
+
+
 
 .title {
   color: #000;
@@ -86,8 +88,10 @@ body {
   max-width: 1167px;
   display: flex;
   justify-content: space-between;
+  margin: 0 -24px;
 }
 
-.popular__item {
-
+.popular__column {
+  flex: 0 0 33%;
+  padding: 24px;
 }
