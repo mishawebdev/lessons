@@ -85,13 +85,23 @@ body {
 }
 
 .popular__items {
-  max-width: 1167px;
   display: flex;
-  justify-content: space-between;
   margin: 0 -24px;
 }
 
 .popular__column {
-  flex: 0 0 33%;
-  padding: 24px;
+  flex: 0 0 33.33%;
+  padding: 0 24px;
+}
+
+.popular__item {
+
+}
+
+.popular__image {
+  object-position: center;
+  object-fit: cover;
+  aspect-ratio: 357 / 240;
+  width: 100%;
+  height: 100%;
 }
