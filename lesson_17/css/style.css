@@ -1,0 +1,93 @@
+@import url("reset.css");
+
+@import url("fonts.css");
+
+/* default styles */
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+
+  display: flex;
+  flex-direction: column;
+}
+
+[class*="__container"] {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper>main {
+  flex-grow: 1;
+}
+
+.header {
+  background-color: #77608d;
+  padding: 15px;
+  text-align: center;
+}
+
+.footer {
+  background-color: #7a956b;
+  padding: 15px;
+  text-align: center;
+}
+
+/* main styles */
+
+/* popular section */
+.popular {
+  background-color: #fefaf4;
+}
+
+/* popular container  */
+.popular__container {
+  max-width: 1358px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 125px;
+  padding-bottom: 115px;
+
+  outline: 1px solid orange;
+}
+
+.title {
+  color: #000;
+  font-family: "DM Serif Text", serif;
+  font-size: 58px;
+  font-weight: 400;
+  line-height: 1;
+  margin-bottom: 27px;
+}
+
+.subtitle {
+  color: #606060;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+.popular__items {
+  max-width: 1167px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.popular__item {
+
+}
