@@ -48,12 +48,13 @@ body {
 
 /* main styles */
 
-/* popular section */
+/* Section Popular */
 .popular {
+  background: url("../images/deco-img.png") no-repeat;
   background-color: #fefaf4;
+  background-position: bottom right;
 }
 
-/* popular container  */
 .popular__container {
   max-width: 1197px;
   margin: 0 auto;
@@ -61,11 +62,7 @@ body {
   padding-right: 15px;
   padding-top: 125px;
   padding-bottom: 115px;
-
-  outline: 1px solid orange;
 }
-
-
 
 .title {
   color: #000;
@@ -147,7 +144,73 @@ body {
   text-decoration: underline;
 }
 
-/* Most Popular Product */
+/* RESPONSIVE CODE */
+@media (max-width: 1250px) {
+  .popular {
+    background-size: 5%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .popular {
+    background-image: none;
+  }
+
+  .popular__container {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .popular__column {
+    flex: 1 0 33%;
+    padding: 0 14px;
+  }
+
+  .popular__items {
+    row-gap: 35px;
+  }
+}
+
+@media (max-width: 767.98px) {
+
+  .popular__container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .title,
+  .subtitle {
+    text-align: center;
+  }
+
+  .popular__column {
+    flex: 1 0 auto;
+    padding: 0 14px;
+  }
+
+  .popular__items {
+    row-gap: 40px;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .popular__header {
+    font-size: 20px;
+  }
+
+  .subtitle {
+    margin-bottom: 30px;
+  }
+}
+
+/* Section Most Popular Product */
+.mostpopular {}
+
 .mostpopular__container {
   max-width: 1203px;
   margin: 0 auto;
@@ -156,8 +219,6 @@ body {
   padding-top: 125px;
   padding-bottom: 115px;
   text-align: center;
-
-  outline: 1px solid orange;
 }
 
 .subtitle-mostpop {
@@ -166,5 +227,216 @@ body {
   font-size: 30px;
   font-weight: 700;
   line-height: 1.4;
+  margin-bottom: 62px;
 }
 
+.mostpopular__items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  margin-bottom: 88px;
+}
+
+.mostpopular__item {
+  flex: 0 0 23%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: box-shadow 0.3s;
+}
+
+.mostpopular__item:hover {
+  box-shadow: 0 5px 5px 2px #ccc;
+}
+
+.mostpopular__image {
+  margin-bottom: 17px;
+
+  object-position: center;
+  object-fit: cover;
+  aspect-ratio: 270 / 270;
+  width: 100%;
+  height: 100%;
+}
+
+.mostpopular__link,
+.mostpopular__price {
+  color: #000;
+  font-family: "Cormorant Infant", serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.4;
+  transition: color 0.3s;
+}
+
+.mostpopular__link:hover {
+  color: #ff7a49;
+}
+
+.mostpopular__btn {
+  padding: 12px 42.5px;
+  background-color: #ff7a49;
+  font-family: "Ubuntu", sans-serif;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.875;
+  transition: all 0.3s;
+}
+
+.mostpopular__btn:hover {
+  box-shadow: 0 0 0 1px #ff7a49;
+  color: #ff7a49;
+  background-color: #fff;
+}
+
+/* RESPONSIVE CODE */
+@media (max-width: 1250px) {
+}
+
+@media (max-width: 991.98px) {
+  .mostpopular__container {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .mostpopular__items {
+    row-gap: 40px;
+    column-gap: 40px;
+  }
+
+  .mostpopular__item {
+    padding: 0 14px;
+  }
+
+}
+
+@media (max-width: 767.98px) {
+
+  .mostpopular__container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .title,
+  .subtitle {
+    text-align: center;
+  }
+
+  .subtitle-mostpop {
+    font-size: 20px;
+  }
+
+  .mostpopular__items {
+    row-gap: 40px;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .mostpopular__header {
+    font-size: 20px;
+  }
+
+  .subtitle {
+    margin-bottom: 30px;
+  }
+}
+
+/* Section Our Products */
+.our-products {
+  background-color: #0e333d;
+}
+
+.our-products__container {
+  max-width: 1203px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 125px;
+  padding-bottom: 115px;
+  text-align: center;
+}
+
+.title--products {
+  color: #fff;
+}
+
+.subtitle-products {
+  color: #ebebeb;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.27;
+  margin-bottom: 34px;
+}
+
+.our-products__filter {
+  display: flex;
+  justify-content: center;
+  column-gap: 41px;
+  margin-bottom: 77px;
+}
+
+.our-products__filter-link {
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.27;
+}
+
+.our-products__filter-link:hover {
+  text-decoration: underline;
+}
+
+.our-products__items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap: 30px;
+}
+
+.our-products__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  flex: 1 0 23%;
+}
+
+.our-products__image {
+  margin-bottom: 17px;
+  border-radius: 5px;
+
+  object-position: center;
+  object-fit: cover;
+  aspect-ratio: 270 / 270;
+  width: 100%;
+  height: 100%;
+  transition: scale 0.3s;
+}
+
+.our-products__item:hover .our-products__image {
+  transform: scale(1.04);
+}
+
+.our-products__link,
+.our-products__price {
+  color: #fff;
+  font-family: "Cormorant Infant", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.4;
+  transition: color 0.3s;
+}
+
+.our-products__link:hover {
+  color: #ff7a49;
+}
