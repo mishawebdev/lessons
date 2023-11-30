@@ -294,6 +294,10 @@ body {
 
 /* RESPONSIVE CODE */
 @media (max-width: 1250px) {
+  .mostpopular__items {
+    row-gap: 30px;
+  }
+
   .mostpopular__item {
     padding: 0 14px;
     flex: 0 0 47%;
@@ -331,7 +335,10 @@ body {
   .mostpopular__item {
     flex-basis: 45%;
     align-items: flex-start;
+  }
 
+  .mostpopular__link {
+    font-size: 22px;
   }
 }
 
@@ -340,6 +347,7 @@ body {
   .mostpopular__item {
     flex-basis: 100%;
   }
+
   .mostpopular__header {
     font-size: 20px;
   }
