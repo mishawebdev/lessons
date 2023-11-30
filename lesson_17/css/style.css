@@ -294,6 +294,10 @@ body {
 
 /* RESPONSIVE CODE */
 @media (max-width: 1250px) {
+  .mostpopular__item {
+    padding: 0 14px;
+    flex: 0 0 47%;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -311,10 +315,6 @@ body {
     column-gap: 40px;
   }
 
-  .mostpopular__item {
-    padding: 0 14px;
-  }
-
 }
 
 @media (max-width: 767.98px) {
@@ -324,22 +324,22 @@ body {
     padding-right: 20px;
   }
 
-  .title,
-  .subtitle {
-    text-align: center;
-  }
-
   .subtitle-mostpop {
     font-size: 20px;
   }
 
-  .mostpopular__items {
-    row-gap: 40px;
-    flex-direction: column;
+  .mostpopular__item {
+    flex-basis: 45%;
+    align-items: flex-start;
+
   }
 }
 
 @media (max-width: 479.98px) {
+
+  .mostpopular__item {
+    flex-basis: 100%;
+  }
   .mostpopular__header {
     font-size: 20px;
   }
