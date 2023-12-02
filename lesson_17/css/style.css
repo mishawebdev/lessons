@@ -416,7 +416,7 @@ body {
   aspect-ratio: 270 / 270;
   width: 100%;
   height: 100%;
-  transition: scale 0.3s;
+  transition: transform 0.3s;
 }
 
 .our-products__image:hover {
