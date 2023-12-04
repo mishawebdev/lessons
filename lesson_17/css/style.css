@@ -86,6 +86,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin: 0 -24px;
+  row-gap: 24px;
 }
 
 .popular__column {
@@ -169,11 +170,10 @@ body {
 
   .popular__items {
     row-gap: 30px;
-    justify-content: space-evenly;
   }
 
   .popular__column {
-    flex: 1 0 43%;
+    flex: 0 0 50%;
   }
 }
 
@@ -185,13 +185,18 @@ body {
   }
 
   .popular__column {
-    flex: 1 0 100%;
+    flex: 0 0 50%;
   }
 }
 
 @media (max-width: 479.98px) {
+
   .popular__header {
     font-size: 20px;
+  }
+
+  .popular__column {
+    flex: 0 0 100%;
   }
 
   .subtitle {
@@ -222,14 +227,16 @@ body {
 
 .mostpopular__items {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
   column-gap: 30px;
+  row-gap: 30px;
   margin-bottom: 88px;
 }
 
+
 .mostpopular__item {
-  flex: 0 0 23%;
+  flex: 0 0 22%;
 
   display: flex;
   flex-direction: column;
@@ -247,7 +254,6 @@ body {
   object-fit: cover;
   aspect-ratio: 270 / 270;
   width: 100%;
-  height: 100%;
 }
 
 .mostpopular__link,
@@ -289,8 +295,7 @@ body {
   }
 
   .mostpopular__item {
-    padding: 0 14px;
-    flex: 0 0 47%;
+    text-align: left;
   }
 }
 
@@ -299,6 +304,12 @@ body {
   .mostpopular__container {
     padding-top: 70px;
     padding-bottom: 70px;
+  }
+
+  .mostpopular__item {
+      flex: 0 0 30%;
+      text-align: left;
+    
   }
 
   .title {
@@ -321,7 +332,7 @@ body {
   .mostpopular__item {
     flex-basis: 45%;
     flex-shrink: 0;
-    flex-grow: 1;
+    flex-grow: 0;
     text-align: left;
   }
 
@@ -394,9 +405,10 @@ body {
 
 .our-products__items {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
   column-gap: 30px;
+  row-gap: 30px;
 }
 
 .our-products__item {
@@ -439,21 +451,14 @@ body {
 
 /* RESPONSIVE CODE */
 @media (max-width: 1250px){
-
-  .our-products__items {
-    row-gap: 30px;
-    column-gap: 30px;
-    justify-content: space-around;
-  }
-
   .our-products__item {
-    flex-basis: 38%;
+    flex: 1 1 30%; 
   }
 }
 
 @media (max-width: 991.98px){
   .our-products__item {
-    flex: 1 1 45%; 
+    flex: 1 1 30%; 
   }
 }
 
