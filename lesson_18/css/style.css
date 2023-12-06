@@ -1,0 +1,481 @@
+@import url("reset.css");
+
+@import url("fonts.css");
+
+/* default styles */
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+
+  display: flex;
+  flex-direction: column;
+}
+
+[class*="__container"] {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper>main {
+  flex-grow: 1;
+}
+
+/* .header {
+  background-color: #77608d;
+  padding: 15px;
+  text-align: center;
+} */
+
+.footer {
+  background-color: #7a956b;
+  padding: 15px;
+  text-align: center;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
+/* main styles */
+
+/* header */
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fff9f4;
+  z-index: 50;
+  border-bottom: 1px solid rgba(130, 130, 130, 0.2);
+}
+
+.header__container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  min-height: 106px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.header__logo {
+  color: #000;
+  font-family: "Merriweather", serif;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 700;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 5;
+}
+
+.menu {
+  flex: 1 1 auto;
+}
+
+.menu__list {
+  display: flex;
+  justify-content: center;
+  column-gap: 36px;
+  row-gap: 5px;
+  flex-wrap: wrap;
+}
+
+.menu__item--active .menu__link {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+@media (any-hover: hover) {
+  .menu__link {
+    color: #000;
+    font-family: "Merriweather", serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration-line: underline;
+    text-decoration-color: transparent;
+    transition: text-decoration-color 0.3s ease-in;
+  }
+}
+
+
+@media (any-hover: hover) {
+  .menu__item:hover .menu__link {
+    text-decoration-color: #000;
+  }
+}
+
+
+
+.header__btn {
+  background-color: #0e333d;
+  color: #fff;
+  font-family: "Merriweather", serif;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 12px 29px 14px 26px;
+  border-radius: 5px;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 5;
+}
+
+.menu__item--parent {
+  position: relative;
+}
+
+.menu__item--parent .menu__link {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.menu__item--parent .menu__link:after {
+  content: "";
+  background: url("../images/icon-menu-arrow.png") 0 0 no-repeat;
+  flex: 0 0 16px;
+  width: 16px;
+  height: 8px;
+  transition: transform 0.3s;
+}
+
+@media (any-hover: hover) {
+  .menu__item--parent:hover .menu__link:after {
+    transform: rotate(180deg);
+  }
+}
+
+
+/* слухаємо hover на parent */
+.menu__item--parent:hover .sub-menu {
+  opacity: 1;
+  transform: translate(0, 0);
+  visibility: visible;
+
+  /* властивість курсора на hover не дозволяє чіплятися за згасаючий пункт меню, все працює очікувано */
+  pointer-events: all;
+}
+
+.sub-menu {
+  transition: all 0.3s;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding-top: 5px;
+
+  /* прибираємо під-меню */
+  transform: translate(0, 10%);
+  opacity: 0;
+  visibility: hidden;
+
+  /* корисна властивість, курсор не чіпляється за меню */
+  pointer-events: none;
+}
+
+.sub-menu__item {
+  padding: 10px 0;
+}
+
+.sub-menu__list {
+  width: 200px;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: rgb(13, 51, 61, 0.7);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+  border: 1px solid #fff;
+}
+
+.sub-menu__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.sub-menu__link {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: text-decoration-color 0.2s ease-in;
+}
+
+@media (any-hover:hover) {
+  .sub-menu__link:hover {
+    text-decoration-color: #fff;
+  }
+}
+
+/* за замовченням */
+.icon-menu {
+  display: none;
+}
+
+@media (max-width: 960px) {
+
+  .header__container {
+    min-height: 70px;
+    padding-right: 30px;
+  }
+
+  .menu__body {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    top: 0;
+
+    /* приховати меню-бургер */
+    left: -100%;
+    transition: left 0.3s;
+
+    background-color: rgba(15, 51, 61, 0.3);
+    padding: 80px 15px 30px 15px;
+  }
+
+
+  .menu__body::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    height: 70px;
+    top: 0;
+
+    /* приховати бургер-меню */
+    left: 100%;
+    transition: left 0.3s;
+
+    z-index: 2;
+    background-color: rgb(255, 249, 245, 1);
+  }
+
+  .menu-open .menu__body,
+  .menu__body::before {
+    left: 0;
+  }
+
+
+
+  .menu__item--parent .menu__link {
+    display: block;
+  }
+
+  .menu__item--parent .menu__link:after {
+    display: none;
+  }
+
+  .menu__list {
+    flex-direction: column;
+    text-align: right;
+    row-gap: 28px;
+  }
+
+  .menu__link {
+    font-size: 28px;
+  }
+
+  .sub-menu {
+    position: relative;
+    padding-top: 10px;
+    visibility: visible;
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+
+  .sub-menu__list {
+    width: 100%;
+    border-radius: 3px;
+  }
+
+  .sub-menu__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .sub-menu__link {
+    color: #e7e1e1;
+    font-size: 24px;
+  }
+
+  .header__btn {
+    font-size: 17px;
+  }
+
+
+
+  /* відображення бургер-меню */
+  .icon-menu {
+    display: block;
+    flex: 0 0 45px;
+    height: 30px;
+    position: relative;
+    z-index: 5;
+  }
+
+  /* створення кнопки бургер-меню */
+  .icon-menu::before,
+  .icon-menu::after,
+  .icon-menu span {
+    content: "";
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    background-color: #000;
+    transition: all 0.3s;
+  }
+
+  .icon-menu::before {
+    top: 0;
+  }
+
+  .icon-menu::after {
+    bottom: 0;
+  }
+
+  .icon-menu span {
+    top: 50%;
+    margin-top: -1px;
+  }
+
+  /* анімація кнопки бургер-меню */
+  .menu-open .icon-menu span {
+    transform: scale(0);
+  }
+
+  .menu-open .icon-menu::before {
+    transform: rotate(-45deg);
+    top: 50%;
+    margin-top: -1px;
+  }
+
+  .menu-open .icon-menu::after {
+    transform: rotate(45deg);
+    bottom: 50%;
+    margin-bottom: -1px;
+  }
+
+
+}
+
+@media (max-width: 440px) {
+
+  .header__logo {
+    font-size: 24px;
+  }
+
+  .header__btn {
+    font-size: 17px;
+  }
+}
+
+/* Hero section */
+
+.hero {
+  background-color: #fff9f4;
+  padding: 206px 0 140px 0;
+  flex-grow: 1;
+  display: flex;
+}
+
+.hero__container {
+  max-width: 1216px;
+  margin: 0 auto;
+  display: flex;
+  column-gap: 30px;
+  row-gap: 35px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.hero__content {
+  flex: 1 1 577px;
+}
+
+.hero__title {
+  color: #0E333D;
+  font-family: "DM Serif Text", serif;
+  font-size: 78px;
+  font-weight: 400;
+  line-height: 1.27;
+  margin-bottom: 27px;
+}
+
+.hero__text {
+  color: #727272;
+  font-family: "Inter", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.48;
+  margin-bottom: 48px;
+}
+
+.hero__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 47px;
+  row-gap: 10px;
+}
+
+.hero__btn {
+  color: #fff;
+  font-family: "DM Serif Text", serif;
+  font-size: 28px;
+  font-weight: 400;
+  padding: 17px 38px;
+  background-color: #0e333d;
+  border-radius: 5px;
+}
+
+.hero__btn--video {
+  color: #0e333d;
+  text-decoration-line: underline;
+  padding: 0;
+  border-radius: 0;
+  background-color: #fff9f4;
+}
+
+.hero__images {
+  display: flex;
+  justify-content: space-between;
+  flex: 0 0 532px;
+  min-height: 537px;
+  column-gap: 32px;
+  align-items: flex-start;
+}
+
+.hero__image {
+  flex: 0 0 46.3%;
+}
+
+.hero__image:first-child {
+  align-self: flex-end;
+}
+
+.hero__image img {
+  object-position: center;
+  object-fit: cover;
+  aspect-ratio: 246 / 468;
+  max-width: 100%;
+}
+
+
+@media (max-width: 960px) {
+  .hero {
+    padding: 90px 0 40px 0;
+  }
+}
