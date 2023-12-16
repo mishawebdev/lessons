@@ -1,203 +1,231 @@
 <!DOCTYPE html>
 <html lang="uk">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="css/style.css">
-		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-		<title>Lesson 19</title>
-	</head>
-	<body>
-		<div class="wrapper">
-			<header class="header">
-			</header>
-			<main class="page">
 
-				<!-- FLEX -->
-				<!-- FLEX-контейнер -->
-				<!-- <div class="flex-container"> -->
-				<!-- FLEX-елементи... -->
-				<!-- 
-					<div class="flex-container__item">я флекс елемент</div>
-					<div class="flex-container__item">... і я</div>
-					<div class="flex-container__item">... і я</div>
-					 -->
-				<!-- </div> -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Lesson 19 | CSS Grid</title>
+</head>
 
-				<!-- GRID -->
-				<!-- GRID-контейнер -->
-				<!-- 
-				<div class="grid-container">
-					<div class="grid-container__item">1 Lorem ipsum dolor sit amet ipsum dolor sit amet </div>
-					<div class="grid-container__item">2</div>
-					<div class="grid-container__item">3</div>
-					<div class="grid-container__item">4</div>
-					<div class="grid-container__item">5</div>
-					<div class="grid-container__item">6</div>
-					<div class="grid-container__item">7</div>
-					<div class="grid-container__item">8</div>
-				</div>
-				 -->
+<body>
+  <div class="wrapper">
+    <header class="header"></header>
 
-				<!-- GRID-AREA -->
-				 
-				<h2>GRID</h2>
-				<div class="grid-area grid-area--margin">
-					<header class="grid-area__header">header</header>
-					<div class="grid-area__sidebar">sidebar</div> 
-					<main class="grid-area__content">
-						content
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda animi cum iste minus? Enim cumque eligendi incidunt magnam, corporis cum nemo assumenda aut deserunt, aliquam reprehenderit, sapiente nobis reiciendis asperiores.
-					</main>
-					<footer class="grid-area__footer">footer</footer>
-				</div>
-				 
-				<!-- FLEX -->
-				<!-- 
-				<h2>FLEX</h2>
-				<div class="flex-area">
-					<header class="flex-area__header">header</header>
-					<div class="flex-area__body">
-						<div class="flex-area__sidebar">sidebar</div> 
-						<main class="flex-area__content">
-							content
-							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda animi cum iste minus? Enim cumque eligendi incidunt magnam, corporis cum nemo assumenda aut deserunt, aliquam reprehenderit, sapiente nobis reiciendis asperiores.
-						</main>
-					</div>
-					<footer class="flex-area__footer">footer</footer>
-				</div>
-				-->
+    <main class="content">
 
-				<div class="similar-products">
-					<div class="similar-products__container">
-						<h2 class="similar-products__title">Similar Products</h2>
-						<div class="similar-products__items">
-							<div class="similar-products__item item">
-								<a href="#" class="item__link-image">
-									<img src="img/image.jpg" class="item__image" alt="Image">
-								</a>
-								<a href="#" class="item__favorite"></a>
-								<div class="item__body">
-									<div class="item__content">
-										<a href="#" class="item__link-title">
-											<h4 class="item__title">White T-Shirt</h4>
-										</a>
-										<div class="item__text">Priya’s Brand</div>
-									</div>
-									<div class="item__price">$13.00</div>
-								</div>
-							</div>
-							<div class="similar-products__item item">
-								<a href="#" class="item__link-image">
-									<img src="img/image-2.jpg" class="item__image" alt="Image">
-								</a>
-								<a href="#" class="item__favorite"></a>
-								<div class="item__body">
-									<div class="item__content">
-										<a href="#" class="item__link-title">
-											<h4 class="item__title">White T-Shirt</h4>
-										</a>
-										<div class="item__text">Priya’s Brand</div>
-									</div>
-									<div class="item__price">$13.00</div>
-								</div>
-							</div>
-							<div class="similar-products__item item">
-								<a href="#" class="item__link-image">
-									<img src="img/image.jpg" class="item__image" alt="Image">
-								</a>
-								<a href="#" class="item__favorite"></a>
-								<div class="item__body">
-									<div class="item__content">
-										<a href="#" class="item__link-title">
-											<h4 class="item__title">White T-Shirt</h4>
-										</a>
-										<div class="item__text">Priya’s Brand</div>
-									</div>
-									<div class="item__price">$13.00</div>
-								</div>
-							</div>
-							<div class="similar-products__item item">
-								<a href="#" class="item__link-image">
-									<img src="img/image-2.jpg" class="item__image" alt="Image">
-								</a>
-								<a href="#" class="item__favorite"></a>
-								<div class="item__body">
-									<div class="item__content">
-										<a href="#" class="item__link-title">
-											<h4 class="item__title">White T-Shirt</h4>
-										</a>
-										<div class="item__text">Priya’s Brand</div>
-									</div>
-									<div class="item__price">$13.00</div>
-								</div>
-							</div>
-							<div class="similar-products__item item">
-								<a href="#" class="item__link-image">
-									<img src="img/image.jpg" class="item__image" alt="Image">
-								</a>
-								<a href="#" class="item__favorite"></a>
-								<div class="item__body">
-									<div class="item__content">
-										<a href="#" class="item__link-title">
-											<h4 class="item__title">White T-Shirt</h4>
-										</a>
-										<div class="item__text">Priya’s Brand</div>
-									</div>
-									<div class="item__price">$13.00</div>
-								</div>
-							</div>
-							<div class="similar-products__item item">
-								<a href="#" class="item__link-image">
-									<img src="img/image-2.jpg" class="item__image" alt="Image">
-								</a>
-								<a href="#" class="item__favorite"></a>
-								<div class="item__body">
-									<div class="item__content">
-										<a href="#" class="item__link-title">
-											<h4 class="item__title">White T-Shirt</h4>
-										</a>
-										<div class="item__text">Priya’s Brand</div>
-									</div>
-									<div class="item__price">$13.00</div>
-								</div>
-							</div>
-							<div class="similar-products__item item">
-								<a href="#" class="item__link-image">
-									<img src="img/image.jpg" class="item__image" alt="Image">
-								</a>
-								<a href="#" class="item__favorite"></a>
-								<div class="item__body">
-									<div class="item__content">
-										<a href="#" class="item__link-title">
-											<h4 class="item__title">White T-Shirt</h4>
-										</a>
-										<div class="item__text">Priya’s Brand</div>
-									</div>
-									<div class="item__price">$13.00</div>
-								</div>
-							</div>
-							<div class="similar-products__item item">
-								<a href="#" class="item__link-image">
-									<img src="img/image-2.jpg" class="item__image" alt="Image">
-								</a>
-								<a href="#" class="item__favorite"></a>
-								<div class="item__body">
-									<div class="item__content">
-										<a href="#" class="item__link-title">
-											<h4 class="item__title">White T-Shirt</h4>
-										</a>
-										<div class="item__text">Priya’s Brand</div>
-									</div>
-									<div class="item__price">$13.00</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+      <!-- DEALS SECTION -->
+      <div class="deals">
+        <div class="deals__container">
+          <div class="deals__items">
 
-			</main>
-			<footer class="footer"></footer>
-		</div>
-	</body>
+            <div class="deals__item">
+              <div class="deals__image">
+                <img src="images/img-01.jpg" alt="image">
+              </div>
+
+              <div class="deals__body">
+                <div class="deals__content">
+                  <div class="deals__label">Low Price</div>
+                  <h2 class="deals__title">
+                    High Coziness
+                  </h2>
+                  <div class="deals__discount">UPTO 50% OFF</div>
+                </div>
+                <a href="#" class="deals__link">Explore Items</a>
+              </div>
+            </div>
+
+            <div class="deals__item">
+              <div class="deals__image">
+                <img src="images/img-02.jpg" alt="image">
+              </div>
+
+              <div class="deals__body">
+                <div class="deals__content">
+                  <div class="deals__label">Beyoung Presents</div>
+                  <h2 class="deals__title">
+                    Breezy Summer Style
+                  </h2>
+                  <div class="deals__discount">UPTO 50% OFF</div>
+                </div>
+                <a href="#" class="deals__link">Explore Items</a>
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+      </div>
+
+      <!-- NEW ARRIVAL -->
+      <div class="arrivals">
+        <div class="arrivals__container">
+          <h2 class="title">New Arrival</h2>
+
+          <div class="arrivals__wrap">
+
+            <button class="arrivals__btn" type="button">
+              <svg class="arrivals__arrow" width="16" height="14" viewBox="0 0 16 14" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M14.5857 7L1.58569 7M6.58569 13L1.2928 7.70711C0.902277 7.31658 0.902277 6.68342 1.2928 6.29289L6.58569 0.999999"
+                  stroke="#3C4242" stroke-width="1.6" stroke-linecap="round" />
+              </svg>
+            </button>
+
+            <div class="arrivals__items">
+
+              <div class="arrivals__item item">
+                <a class="item__link-image" href="#">
+                  <img class="item__image" src="images/arrivals-01.jpg" alt="image">
+                </a>
+                <div class="item__body">
+                  <a class="item__link-title" href="#">
+                    <h5 class="item__title">Knitted Joggers</h5>
+                  </a>
+                </div>
+              </div>
+
+              <div class="arrivals__item item">
+                <a class="item__link-image" href="#">
+                  <img class="item__image" src="images/arrivals-02.jpg" alt="image">
+                </a>
+                <div class="item__body">
+                  <a class="item__link-title" href="#">
+                    <h5 class="item__title">Full Sleeve</h5>
+                  </a>
+                </div>
+              </div>
+
+              <div class="arrivals__item item">
+                <a class="item__link-image" href="#">
+                  <img class="item__image" src="images/arrivals-03.jpg" alt="image">
+                </a>
+                <div class="item__body">
+                  <a class="item__link-title" href="#">
+                    <h5 class="item__title">Active T-Shirts</h5>
+                  </a>
+                </div>
+              </div>
+
+              <div class="arrivals__item item">
+                <a class="item__link-image" href="#">
+                  <img class="item__image" src="images/arrivals-04.jpg" alt="image">
+                </a>
+                <div class="item__body">
+                  <a class="item__link-title" href="#">
+                    <h5 class="item__title">Urban Shirts</h5>
+                  </a>
+                </div>
+              </div>
+
+
+            </div>
+
+            <button class="arrivals__btn" type="button">
+              <svg class="arrivals__arrow" width="16" height="14" viewBox="0 0 16 14" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 7H14M9 1L14.2929 6.29289C14.6834 6.68342 14.6834 7.31658 14.2929 7.70711L9 13"
+                  stroke="#3C4242" stroke-width="1.6" stroke-linecap="round" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECTION SAVING -->
+      <div class="saving">
+        <div class="saving__container">
+          <h2 class="title title--saving">Big Saving Zone</h2>
+
+          <div class="saving__items">
+
+            <div class="saving__item item-saving">
+              <a class="item-saving__image" href="#">
+                <img src="images/saving-img-01.jpg" alt="image">
+              </a>
+
+              <div class="item-saving__body">
+                <a class="item-saving__title" href="#">
+                  <h2>Hawaiian Shirts</h2>
+                </a>
+                <h3 class="item-saving__subtitle">Dress up in summer vibe</h3>
+                <h5 class="item-saving__label">UPTO 50% OFF</h5>
+                <a class="item-saving__link" href="#">SHOP NOW</a>
+              </div>
+            </div>
+
+            <div class="saving__item item-saving">
+              <a class="item-saving__image" href="#">
+                <img src="images/saving-img-02.jpg" alt="image">
+              </a>
+
+              <div class="item-saving__body">
+                <div class="item-saving__label">Limited Stock</div>
+                <a class="item-saving__title" href="#">
+                  <h2>Printed T-Shirt</h2>
+                </a>
+                <h3 class="item-saving__subtitle">New Designs Every Week</h3>
+                <h5 class="item-saving__label">UPTO 40% OFF</h5>
+                <a class="item-saving__link" href="#">SHOP NOW</a>
+              </div>
+            </div>
+
+            <div class="saving__item item-saving">
+              <a class="item-saving__image" href="#">
+                <img src="images/saving-img-03.jpg" alt="image">
+              </a>
+
+              <div class="item-saving__body">
+                <a class="item-saving__title" href="#">
+                  <h2>Cargo Joggers</h2>
+                </a>
+                <h3 class="item-saving__subtitle">Move with style & comfort</h3>
+                <h5 class="item-saving__label">UPTO 50% OFF</h5>
+                <a class="item-saving__link" href="#">SHOP NOW</a>
+              </div>
+            </div>
+
+            <div class="saving__item item-saving">
+              <a class="item-saving__image" href="#">
+                <img src="images/saving-img-04.jpg" alt="image">
+              </a>
+
+              <div class="item-saving__body">
+                <a class="item-saving__title" href="#">
+                  <h2>Urban Shirts</h2>
+                </a>
+                <h3 class="item-saving__subtitle">Live In Confort</h3>
+                <h5 class="item-saving__label">FLAT 60% OFF</h5>
+                <a class="item-saving__link" href="#">SHOP NOW</a>
+              </div>
+            </div>
+
+            <div class="saving__item item-saving">
+              <a class="item-saving__image" href="#">
+                <img src="images/saving-img-05.jpg" alt="image">
+              </a>
+
+              <div class="item-saving__body">
+                <a class="item-saving__title" href="#">
+                  <h2>Oversized T-Shirts</h2>
+                </a>
+                <h3 class="item-saving__subtitle">Street Style Icon</h3>
+                <h5 class="item-saving__label">FLAT 60% OFF</h5>
+                <a class="item-saving__link" href="#">SHOP NOW</a>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+    </main>
+
+    <footer class="footer"></footer>
+  </div>
+</body>
+
 </html>
