@@ -1,0 +1,69 @@
+@import "_fonts.scss";
+@import "_reset.scss";
+@import "_vars.scss";
+
+.header {
+
+  &__container {
+    margin: 0 auto;
+    max-width: 1470px;
+    padding: 0 15px;
+  }
+
+  &__body {
+    max-width: 1240px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 34px 0;
+  }
+
+  &__logo {
+    flex: 0 0 91px;
+
+    img {
+      max-width: 91px;
+      width: 100%;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+  }
+
+  &__forms {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__search-form {
+  }
+
+  &__input {
+  }
+
+  &__button {
+
+    &--login {
+    }
+
+    &--signup {
+    }
+  }
+
+  &__select-form {
+  }
+
+  &__select {
+  }
+
+  &__option {
+  }
+
+  &__buttons {
+  }
+}
+.icon-menu {
+}
