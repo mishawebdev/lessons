@@ -6,16 +6,12 @@
 
   &__container {
     margin: 0 auto;
-    max-width: 1470px;
-    padding: 0 15px;
-  }
+    max-width: 1270px;
+    padding: 34px 15px 31px 15px;
 
-  &__body {
-    max-width: 1240px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 34px 0;
   }
 
   &__logo {
