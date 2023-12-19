@@ -32,15 +32,20 @@
   &__forms {
     display: flex;
     justify-content: space-between;
+    gap: 210px;
   }
 
   &__search-form {
+    flex: 0 0 184px;
   }
 
   &__input {
+    width: 100%;
+    background-color: #ccc;
   }
 
   &__button {
+    padding: 12px 48px;
 
     &--login {
     }
@@ -62,4 +67,5 @@
   }
 }
 .icon-menu {
+  display: none;
 }

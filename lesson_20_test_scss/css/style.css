@@ -139,4 +139,20 @@ textarea {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  gap: 210px;
+}
+.header__search-form {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 184px;
+          flex: 0 0 184px;
+}
+.header__input {
+  width: 100%;
+  background-color: #ccc;
+}
+.header__button {
+  padding: 12px 48px;
+}
+.icon-menu {
+  display: none;
 }
