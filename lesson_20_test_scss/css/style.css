@@ -113,7 +113,7 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 163px;
+  gap: 30px;
 }
 .header__logo {
   -webkit-box-flex: 0;
@@ -146,7 +146,7 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 210px;
+  gap: 30px;
 }
 .header__search-form {
   -webkit-box-flex: 0;
@@ -182,11 +182,29 @@ textarea {
 .header__button {
   padding: 12px 48px;
   border-radius: 8px;
-  background-color: #8a33fd;
-  color: #fff;
   font-family: "Causten", sans-serif;
   font-size: 18px;
   font-weight: 500;
+}
+.header__button--login {
+  background-color: #8a33fd;
+  color: #fff;
+  border: 1px solid transparent;
+}
+.header__button--login:hover {
+  background-color: #fff;
+  color: #8a33fd;
+  border: 1px solid #3c4242;
+}
+.header__button--signup {
+  background-color: #fff;
+  color: #8a33fd;
+  border: 1px solid #3c4242;
+}
+.header__button--signup:hover {
+  background-color: #8a33fd;
+  color: #fff;
+  border: 1px solid transparent;
 }
 .header__select {
   font-family: "Causten", sans-serif;
