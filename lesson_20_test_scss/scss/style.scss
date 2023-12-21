@@ -18,6 +18,9 @@
 
   &__logo {
     flex: 0 0 91px;
+    position: relative;
+    z-index: 5;
+
 
     img {
       max-width: 91px;
@@ -25,16 +28,15 @@
     }
   }
   
-  &__body {
-    display: flex;
-  }
-
   &__actions {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 76px;
     flex-grow: 1;
+
+    position: relative;
+    z-index: 4;
   }
 
   &__forms {
@@ -127,15 +129,123 @@
     gap: 27px;
     flex-shrink: 0;
   }
-
-
 }
-  @media (max-width: 960px) {
-    .header__body {
-      flex-direction: column;
-    }
-  }
-
 .icon-menu {
   display: none;
 }
+// media queries
+  @media (max-width: 960px) {
+
+    .header {
+
+      &__container {
+        padding: 17px 8px 16px 8px;
+      }
+
+      &__actions {
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-start;
+        row-gap: 25px;
+
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 79px;
+        left: -100%;
+        background-color: rgba(204, 204, 204, 0.631);
+        padding: 15px 15px;
+        overflow: auto;
+        transition: left 0.3s;
+
+        &::before {
+          content: "";
+          position: fixed;
+          width: 100%;
+          height: 80px;
+          top: 100%;
+          left: 0;
+          z-index: 2;
+          background-color: rgba(204, 204, 204, 1);
+          transition: left 0.3s;
+        }
+      }
+
+      .menu-open &__actions,
+        .menu-open &::before {
+          left: 0;
+        }
+
+      &__forms {
+        flex-direction: column;
+        row-gap: 25px;
+        flex-grow: 0;
+      }
+
+      &__buttons {
+        flex-direction: column;
+      }
+
+      &__search-form {
+        flex-grow: 0;
+        flex-shrink: 0; 
+        flex-basis: 54px;
+        width: 100%;
+      }
+
+      &__select {
+        min-height: 46px;
+        border-radius: 8px;
+      }
+
+    }
+    .icon-menu {
+      flex: 0 0 45px;
+      height: 45px;
+      position: relative;
+      display: block;
+      z-index: 5;
+      background-color: rgba(128, 128, 128, 0.192);
+      border-radius: 7px;
+
+      &::before,
+      &::after,
+      & span {
+        content: "";
+        height: 2px;
+        width: 70%;
+        left: 7px;
+        position: absolute;
+        background-color: #000;
+        z-index: 3;
+        transition: all 0.3s;
+      }
+
+      &::before {
+        top: 12px;
+      }
+
+      &::after {
+        bottom: 12px;
+      }
+
+      & span {
+        top: 50%;
+        margin-top: -1px;
+      }
+    }
+      .menu-open .icon-menu span {
+        transform: scale(0);
+      }
+      .menu-open .icon-menu::before {
+        transform: rotate(-45deg);
+        top: 50%;
+        margin-top: -1px;
+      }
+
+      .menu-open .icon-menu::after {
+        transform: rotate(45deg);
+        bottom: 50%;
+        margin-bottom: -1px;
+      }
+  }
