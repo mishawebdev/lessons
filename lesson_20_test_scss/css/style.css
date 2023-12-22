@@ -210,6 +210,11 @@ textarea {
   display: none;
 }
 
+@media (min-width: 961px) {
+  .header__forms-wrap {
+    width: 100%;
+  }
+}
 @media (max-width: 960px) {
   .header__container {
     padding: 17px 8px 16px 8px;

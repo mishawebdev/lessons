@@ -141,6 +141,16 @@
   display: none;
 }
 // media queries
+@media (min-width: 961px){
+  .header {
+
+    &__forms-wrap {
+      width: 100%;
+    }
+
+  }
+}
+
   @media (max-width: 960px) {
 
     .header {
