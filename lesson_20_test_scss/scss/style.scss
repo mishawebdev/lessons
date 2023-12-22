@@ -180,6 +180,7 @@
         flex-direction: column;
         row-gap: 25px;
         flex-grow: 0;
+        align-items: flex-start;
       }
 
       &__buttons {
@@ -247,4 +248,13 @@
         bottom: 50%;
         margin-bottom: -1px;
       }
+  }
+
+  @media (max-width: 450px) {
+    .header {
+
+      &__buttons {
+        flex-direction: column;
+      }
+    }
   }
