@@ -32,8 +32,7 @@
   padding: 0;
   margin: 0;
   border: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *::before,
@@ -96,7 +95,6 @@ input[type=email],
 input[type=tel],
 textarea {
   -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
 }
 
@@ -107,21 +105,13 @@ textarea {
   margin: 0 auto;
   max-width: 1270px;
   padding: 34px 15px 31px 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   gap: 30px;
 }
 .header__logo {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 91px;
-          flex: 0 0 91px;
+  flex: 0 0 91px;
   position: relative;
   z-index: 5;
 }
@@ -130,48 +120,26 @@ textarea {
   width: 100%;
 }
 .header__actions {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   gap: 76px;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
   position: relative;
   z-index: 4;
 }
 .header__forms {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   gap: 71px;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
 }
 .header__search-form {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 184px;
-          flex: 0 0 184px;
+  flex: 0 0 184px;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin: 0 auto;
 }
 .header__search-form::before {
@@ -179,7 +147,7 @@ textarea {
   display: block;
   background-image: url("../images/icon-search.svg");
   position: absolute;
-  left: 30px;
+  left: 15px;
   width: 20px;
   height: 20px;
 }
@@ -199,6 +167,7 @@ textarea {
   font-family: "Causten", sans-serif;
   font-size: 18px;
   font-weight: 500;
+  flex-grow: 1;
 }
 .header__button--login {
   background-color: #8a33fd;
@@ -220,21 +189,21 @@ textarea {
   color: #fff;
   border: 1px solid transparent;
 }
+.header__select-form {
+  width: 100%;
+}
 .header__select {
   font-family: "Causten", sans-serif;
   font-size: 18px;
   font-weight: 400;
+  width: 100%;
+  padding: 0 15px;
 }
 .header__buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   gap: 27px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
 }
 
 .icon-menu {
@@ -246,16 +215,9 @@ textarea {
     padding: 17px 8px 16px 8px;
   }
   .header__actions {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
     row-gap: 25px;
     position: fixed;
     width: 100%;
@@ -265,7 +227,6 @@ textarea {
     background-color: rgba(204, 204, 204, 0.631);
     padding: 15px 15px;
     overflow: auto;
-    -webkit-transition: left 0.3s;
     transition: left 0.3s;
   }
   .header__actions::before {
@@ -277,33 +238,27 @@ textarea {
     left: 0;
     z-index: 2;
     background-color: rgb(204, 204, 204);
-    -webkit-transition: left 0.3s;
     transition: left 0.3s;
   }
   .menu-open .header__actions, .menu-open .header::before {
     left: 0;
   }
   .header__forms {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     row-gap: 25px;
-    -webkit-box-flex: 0;
-        -ms-flex-positive: 0;
-            flex-grow: 0;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    flex-grow: 0;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .header__forms-wrap {
+    max-width: 600px;
+    display: block;
+    margin: 0 auto;
   }
   .header__search-form {
-    -webkit-box-flex: 0;
-        -ms-flex-positive: 0;
-            flex-grow: 0;
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
-    -ms-flex-preferred-size: 54px;
-        flex-basis: 54px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 54px;
     width: 100%;
   }
   .header__select {
@@ -311,9 +266,7 @@ textarea {
     border-radius: 8px;
   }
   .icon-menu {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 45px;
-            flex: 0 0 45px;
+    flex: 0 0 45px;
     height: 45px;
     position: relative;
     display: block;
@@ -329,7 +282,6 @@ textarea {
     position: absolute;
     background-color: #000;
     z-index: 3;
-    -webkit-transition: all 0.3s;
     transition: all 0.3s;
   }
   .icon-menu::before {
@@ -344,19 +296,16 @@ textarea {
   }
   .menu-open .icon-menu span {
     -webkit-transform: scale(0);
-        -ms-transform: scale(0);
             transform: scale(0);
   }
   .menu-open .icon-menu::before {
     -webkit-transform: rotate(-45deg);
-        -ms-transform: rotate(-45deg);
             transform: rotate(-45deg);
     top: 50%;
     margin-top: -1px;
   }
   .menu-open .icon-menu::after {
     -webkit-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
             transform: rotate(45deg);
     bottom: 50%;
     margin-bottom: -1px;
@@ -364,9 +313,6 @@ textarea {
 }
 @media (max-width: 450px) {
   .header__buttons {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }

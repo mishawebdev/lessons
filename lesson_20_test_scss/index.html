@@ -21,26 +21,29 @@
 
         <div class="header__actions">
 
-          <div class="header__forms">
+          <div class="header__forms-wrap">
+            <div class="header__forms">
+              <form class="header__search-form" action="#">
 
-            <form class="header__search-form" action="#">
+                <input class="header__input" type="search" name="search" id="search" placeholder="Search">
+              </form>
 
-              <input class="header__input" type="search" name="search" id="search" placeholder="Search">
-            </form>
+              <form class="header__select-form" action="#">
+                <select class="header__select" name="language" id="language">
+                  <option class="header__option" value="">English (United States)</option>
+                  <option class="header__option" value="">Ukrainian</option>
+                  <option class="header__option" value="">Italian</option>
+                </select>
+              </form>
+            </div>
 
-            <form class="header__select-form" action="#">
-              <select class="header__select" name="language" id="language">
-                <option class="header__option" value="">English (United States)</option>
-                <option class="header__option" value="">Ukrainian</option>
-                <option class="header__option" value="">Italian</option>
-              </select>
-            </form>
+            <div class="header__buttons">
+              <button class="header__button header__button--login">Login</button>
+              <button class="header__button header__button--signup">Sign Up</button>
+            </div>
+
           </div>
 
-          <div class="header__buttons">
-            <button class="header__button header__button--login">Login</button>
-            <button class="header__button header__button--signup">Sign Up</button>
-          </div>
         </div>
 
         <!-- burger-menu -->
