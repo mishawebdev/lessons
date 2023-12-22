@@ -167,7 +167,7 @@ textarea {
   font-family: "Causten", sans-serif;
   font-size: 18px;
   font-weight: 500;
-  flex-grow: 1;
+  flex-grow: 0;
 }
 .header__button--login {
   background-color: #8a33fd;
@@ -254,6 +254,10 @@ textarea {
     max-width: 600px;
     display: block;
     margin: 0 auto;
+    width: 100%;
+  }
+  .header__button {
+    flex-grow: 1;
   }
   .header__search-form {
     flex-grow: 0;
