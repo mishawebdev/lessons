@@ -211,6 +211,9 @@ textarea {
 }
 
 @media (min-width: 961px) {
+  .header__buttons {
+    justify-content: flex-end;
+  }
   .header__forms-wrap {
     width: 100%;
   }

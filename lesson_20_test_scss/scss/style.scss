@@ -144,10 +144,13 @@
 @media (min-width: 961px){
   .header {
 
+    &__buttons {
+      justify-content: flex-end;
+    }
+
     &__forms-wrap {
       width: 100%;
     }
-
   }
 }
 
