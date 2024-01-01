@@ -427,20 +427,23 @@ body {
     @media(min-width: $mobile) {
       & {
         display: flex;
+        flex-direction: row-reverse;
       }
     }
 
 		// .section__image
 		&__image {
-
+      
       img{
         max-width: 100%;
       }
 		}
-
-  @media (min-width: $mobile) {
-    &__image {
-      flex: 0 0 50%;
+    
+    @media (min-width: $mobile) {
+      &__image {
+        position: relative;
+        flex: 0 0 50%;
+        transform: translate(100%, 0);
     }
   }
 
@@ -448,46 +451,187 @@ body {
 		&__content {
       flex: 0 0 100%;
 		}
+
 		// .section__container
 		&__container {
       max-width: 1270px;
       margin: 0 auto;
       padding: 0 15px;
-      background-color: #ccc;
+      background-color: #eeeeee;
+      display: flex;
+      flex-direction: row-reverse;
 		}
 		// .section__body
 		&__body {
+      width: 50%;
       max-width: 568px;
+      padding-top: 60px;
+      padding-left: 15px;
 
       @media (min-width: $mobile) {
-        flex: 0 0 100%;
+        & {
+          // flex: 0 0 100%;
+        }
       }
 		}
 		// .section__title
 		&__title {
+      color: #333;
+      font-family: "Core Sans C", sans-serif;
+      font-size: 34px;
+      font-weight: 600;
+      letter-spacing: 0.68px;
+      margin-bottom: 50px;
 		}
 		// .section__link
 		&__link {
+      color: #8a33fd;
+      font-family: "Causten", sans-serif;
+      font-size: 22px;
+      font-weight: 500;
+      height: 58px;
+      border: 1px solid $dark;
+      border-radius: 8px;
+      padding: 16px 20px;
+      text-align: center;
+      margin-bottom: 20px;
+
+      & a::before {
+        content: "";
+        width: 20px;
+        height: 20px;
+        background: url("../images/icon-google.svg")  no-repeat;
+        margin-right: 12px;
+      }
 		}
+
+    &__link--twitter {
+      margin-bottom: 50px;
+      & a::before {
+        background: url("../images/icon-twitter.svg") 0 0 no-repeat;
+      }
+    }
+
+
 		// .section__separator
 		&__separator {
+      max-width: 568px;
+      position: relative;
+      text-align: center;
+      margin-bottom: 50px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        top: calc(50% - 2px);
+        left: 0;
+        background-color: #d9d9d9;
+      }
+
+      span {
+        color: #666;
+        font-family: "Core Sans C", sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: normal;
+
+        padding: 0 23px;
+        position: relative;
+        z-index: 2;
+        background-color: #eee;
+      }
 		}
+
+
 		// .section__form
 		&__form {
 		}
 		// .section__input
 		&__input {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      
+      color: #3c4242;
+      font-family: "Causten", sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 0.36px;
+      
+      & label {
+        margin-bottom: 10px;
+      }
+      
+      & input {
+        border: 1px solid $dark;
+        border-radius: 8px;
+        width: 100%;
+        height: 58px;
+        padding: 0 15px;
+      }
+
+      &--password{
+        margin-bottom: 10px;
+      }
 		}
 		// .section__hide
 		&__hide {
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 18px;
+        height: 15px;
+        display: block;
+        background: url("../images/icon-hide-pass.svg") 0 0 no-repeat;
+        margin-right: 15px;
+      }
 		}
 		// .section__forgot-pass
 		&__forgot-pass {
+      margin-bottom: 30px;
+
+      & a {
+      color: #3c4242;
+      font-family: "Causten", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      text-decoration: underline;
+      }
 		}
 		// .section__button
 		&__button {
+      padding: 16px 58px;
+      background-color: $accentColor;
+      border-radius: 8px;
+      border: 1px solid transparent;
+      margin-bottom: 10px;
+
+      color: $white;
+      font-family: "Causten", sans-serif;
+      font-size: 18px;
+      font-weight: 500;
+      transition: 0.3s;
+
+      &:hover {
+        color: $accentColor;
+        background-color: $white;
+        border: 1px solid $grey;
+      }
 		}
 		// .section__reminder
 		&__reminder {
+      color: #3c4242;
+      font-family: "Causten", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+
+      & a {
+        text-decoration: underline;
+      }
 		}
 }

@@ -16,10 +16,10 @@
       <div class="header__container">
 
         <div class="header__logo">
-					<a href="#" class="header__link-logo">
-						<img src="images/logo.svg" alt="logo">
-					</a>
-				</div>
+          <a href="#" class="header__link-logo">
+            <img src="images/logo.svg" alt="logo">
+          </a>
+        </div>
 
         <div class="header__actions">
 
@@ -40,7 +40,7 @@
                   <li><a href="#">Ukrainian</a></li>
                   <li><a href="#">Italian</a></li>
                 </ul>
-                
+
               </div>
             </div>
 
@@ -65,24 +65,26 @@
     <main class="page">
 
       <div class="section">
-        <!-- image flex-element -->
-        <div class="section__image">
-          <img src="images/banner-image.jpg" alt="image">
-        </div>
 
         <!-- content flex-element -->
         <div class="section__content">
 
           <div class="section__container">
-            
+
             <div class="section__body">
               <h1 class="section__title">Sign In Page</h1>
-              <a href="#" class="section__link">
-                Continue With Google
-              </a>
-              <a href="#" class="section__link">
-                Continue With Twitter
-              </a>
+              
+              <div class="section__link">
+                <a href="#">
+                  Continue With Google
+                </a>
+              </div>
+
+              <div class="section__link section__link--twitter">
+                <a href="#">
+                  Continue With Twitter
+                </a>
+              </div>
 
               <div class="section__separator">
                 <span>OR</span>
@@ -95,15 +97,17 @@
                   <input type="text" name="" id="">
                 </div>
 
-                <div class="section__input">
+                <div class="section__input section__input--password">
                   <label for="">Password</label>
                   <div class="section__hide">Hide</div>
                   <input type="password" name="" id="">
                 </div>
 
-                <a href="#" class="section__forgot-pass">
-                  Forget your password
-                </a>
+                <div class="section__forgot-pass">
+                  <a href="#">
+                    Forget your password
+                  </a>
+                </div>
 
                 <button class="section__button" type="submit">Sign In</button>
 
@@ -114,8 +118,13 @@
               </form>
             </div>
           </div>
-
         </div>
+
+        <!-- image flex-element -->
+        <div class="section__image">
+          <img src="images/banner-image.jpg" alt="image">
+        </div>
+
       </div>
 
     </main>
