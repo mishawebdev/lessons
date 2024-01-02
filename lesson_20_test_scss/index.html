@@ -73,15 +73,17 @@
 
             <div class="section__body">
               <h1 class="section__title">Sign In Page</h1>
-              
-              <div class="section__link">
-                <a href="#">
+
+              <div class="section__link-body">
+                <a class="section__link" href="#">
+                  <img class="section__link-image" src="images/icon-google.svg" alt="image google">
                   Continue With Google
                 </a>
               </div>
 
-              <div class="section__link section__link--twitter">
-                <a href="#">
+              <div class="section__link-body section__link--twitter">
+                <a class="section__link" href="#">
+                  <img class="section__link-image" src="images/icon-twitter.svg" alt="image google">
                   Continue With Twitter
                 </a>
               </div>
@@ -98,8 +100,21 @@
                 </div>
 
                 <div class="section__input section__input--password">
-                  <label for="">Password</label>
-                  <div class="section__hide">Hide</div>
+                  <div class="section__label-body">
+
+                    <label for="">Password</label>
+
+                    <div class="section__hide-wrap">
+
+                      <a class="section__hide-icon" href="#">
+                        <img src="images/icon-hide-pass.svg" alt="icon">
+                      </a>
+
+                      <div class="section__hide">Hide</div>
+
+                    </div>
+
+                  </div>
                   <input type="password" name="" id="">
                 </div>
 
